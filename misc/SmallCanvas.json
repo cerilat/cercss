@@ -1,178 +1,195 @@
-/* border-radius: 0; */
-.css-hy0jss-toggleFacade__iconToggle::before {
-    border-radius: 0;
-}
-.css-imddxy-toggleFacade__iconToggle::before {
-    border-radius: 0;
-}
-.css-1k0ln62-toggleFacade__facade::before {
-    border-radius: 0;
-}
-.css-qpn3b8-toggleFacade__facade::before {
-    border-radius: 0;
-}
+/* ==UserStyle==
+@name         SmallCanvas
+@namespace    Canvas
+@description  Condensed elements for Canvas
+@author       dynai (https://github.com/twdynai)
+@homepageURL  https://github.com/twdynai/dynallib
+@supportURL   https://github.com/twdynai/dynallib/issues
+@preprocessor stylus
+@version      1.0.0
+@license      MIT
+==/UserStyle== */
+@-moz-document domain("canvas.calpoly.edu"), domain("canvadocs-pdx-prod.inscloudgate.net") {
+    /* border-radius: 0; */
+    .css-hy0jss-toggleFacade__iconToggle::before {
+        border-radius: 0;
+    }
+    .css-imddxy-toggleFacade__iconToggle::before {
+        border-radius: 0;
+    }
+    .css-1k0ln62-toggleFacade__facade::before {
+        border-radius: 0;
+    }
+    .css-qpn3b8-toggleFacade__facade::before {
+        border-radius: 0;
+    }
 
-/* Core */
-.ic-app-nav-toggle-and-crumbs {
-    min-height: 3.5rem;
-}
-.ic-Layout-contentMain {
-    padding: 36px;
-}
-/* body:not(.full-width):not(.outcomes):not(.body--login-confirmation) .ic-Layout-wrapper {
-    max-width: 1440px;
-} */
+    /* Core */
+    .ic-app-nav-toggle-and-crumbs {
+        min-height: 3.5rem;
+    }
+    .ic-Layout-contentMain {
+        padding: 36px;
+    }
+    /* body:not(.full-width):not(.outcomes):not(.body--login-confirmation) .ic-Layout-wrapper {
+        max-width: 1440px;
+    } */
 
-/* navigation */
-.ic-app-header__logomark {
-    height: 54px;
-}
-.ic-app-nav-toggle-and-crumbs {
-    margin-left: 36px;
-}
-.page-toolbar .page-toolbar-start>div {
-    padding-bottom: 0;
-}
+    /* navigation */
+    .ic-app-header__logomark {
+        height: 54px;
+    }
+    .ic-app-nav-toggle-and-crumbs {
+        margin-left: 36px;
+    }
+    .page-toolbar .page-toolbar-start>div {
+        padding-bottom: 0;
+    }
 
-#content{
-    display: flex;
-    flex-direction: column;
-    padding: 12px;
-    padding-left: 36px;
-}
+    #content{
+        display: flex;
+        flex-direction: column;
+        padding: 12px;
+        padding-left: 36px;
+    }
 
-/* Sidebar */
-.ic-app-header {
-    width: 48px;
-}
-.ic-app-header__logomark-container {
-    display: none;
-}
-.ic-avatar {
-    border-radius: 2px !important;
-}
-.css-1uppnf7-view--block-avatar.css-1uppnf7-view--block-avatar.css-1uppnf7-view--block-avatar.css-1uppnf7-view--block-avatar.css-1uppnf7-view--block-avatar.css-1uppnf7-view--block-avatar.css-1uppnf7-view--block-avatar.css-1uppnf7-view--block-avatar.css-1uppnf7-view--block-avatar.css-1uppnf7-view--block-avatar {
-    margin-bottom: 12px;
-}
-.css-cv5a3j-view-heading{
-    display: flex;
-    flex-direction: column;
-}
-.css-cv5a3j-view-heading span{
-    font-size: 0.75em;
-    line-height: 1.5em;
-}
-.ic-app-course-menu #section-tabs-header-subtitle {
-    padding: 0 0 0px 6px;
-}
-.list-view>div>nav>ul>li>a {
-    padding: 8px 0 8px 6px;
-    line-height: 1;
-}
+    /* Sidebar */
+    .ic-app-header {
+        width: 48px;
+    }
+    .ic-app-header__logomark-container {
+        display: none;
+    }
+    .ic-avatar {
+        border-radius: 2px !important;
+    }
+    .css-1uppnf7-view--block-avatar.css-1uppnf7-view--block-avatar.css-1uppnf7-view--block-avatar.css-1uppnf7-view--block-avatar.css-1uppnf7-view--block-avatar.css-1uppnf7-view--block-avatar.css-1uppnf7-view--block-avatar.css-1uppnf7-view--block-avatar.css-1uppnf7-view--block-avatar.css-1uppnf7-view--block-avatar {
+        margin-bottom: 12px;
+    }
+    .css-cv5a3j-view-heading{
+        display: flex;
+        flex-direction: column;
+    }
+    .css-cv5a3j-view-heading span{
+        font-size: 0.75em;
+        line-height: 1.5em;
+    }
+    .ic-app-course-menu #section-tabs-header-subtitle {
+        padding: 0 0 0px 6px;
+    }
+    .list-view>div>nav>ul>li>a {
+        padding: 8px 0 8px 6px;
+        line-height: 1;
+    }
 
-/* Modules */
-.header-bar {
-    min-height: 0;
-    padding-bottom: 0;
-}
-.ig-list .ig-row {
-    padding: 4px 4px 4px 8px;
-}
-.item-group-condensed {
-    padding: 2px;
-}
-.item-group-condensed .ig-header {
-    margin-top: 6px;
+    /* Modules */
+    .header-bar {
+        min-height: 0;
+        padding-bottom: 0;
+    }
+    .ig-list .ig-row {
+        padding: 4px 4px 4px 8px;
+    }
+    .item-group-condensed {
+        padding: 2px;
+    }
+    .item-group-condensed .ig-header {
+        margin-top: 6px;
+        padding: 0;
+    }
+    .ig-header {
+        min-height: 0;
+    }
+    .ig-header .ig-header-title {
+        margin: 0;
+        padding: 6px;
+    }
+    .item-group-condensed .ig-header {
+        margin-top: 6px;
+        padding: 0 12px;
+    }
+    .ig-header .prerequisites {
+        padding: 0;
+    }
+    .item-group-container{
+        padding-bottom: 24px;
+    }
+    .context_module {
+        margin-top: 6px;
+    }
+    .context_module div.footer {
+        padding: 0;
+    }
+    h3 {
+        margin: 6px 0;
+        font-family: "Lato Extended", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        line-height: 1.2;
+        text-rendering: optimizelegibility;
+    }
+
+    /* Assignments */
+    #assignment_show .assignment-title {
+        margin-bottom: 12px;
+    }
+    #assignment_show .student-assignment-overview {
+        padding: 6px 0;
+        margin: 0 0 18px 0;
+    }
+    #assignment_show .student-assignment-overview .value {
+        padding-right: 1em;
+    }
+
+    /* elements */
+    .btn, .Button, .ui-button {
+        padding: 4px 8px;
+        margin-bottom: 0;
+        line-height: 22px;
+    }
+    .css-1mc6m81-baseButton__content {
+        transition: background 0.2s, transform 0.2s;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .css-11xkk0o-baseButton__children {
+        display: block;
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+    .ic-app-course-nav-toggle {
+        margin-right: 12px;
+        padding: 0;
+        width: 36px;
+        height: 36px;
+    }
+
+    /* document preview */
+    #doc_preview{
+        height: auto !important;
+    }
+    #doc_preview div{
+        overflow: hidden !important;
+        min-height: 47px;
+    }
+    #undefined{
+        height: 100% !important;
+        min-height: 0 !important;
+    }
+    .Pages {
     padding: 0;
-}
-.ig-header {
-    min-height: 0;
-}
-.ig-header .ig-header-title {
-    margin: 0;
-    padding: 6px;
-}
-.item-group-condensed .ig-header {
-    margin-top: 6px;
-    padding: 0 12px;
-}
-.ig-header .prerequisites {
-    padding: 0;
-}
-.item-group-container{
-    padding-bottom: 24px;
-}
-.context_module {
-    margin-top: 6px;
-}
-.context_module div.footer {
-    padding: 0;
-}
-h3 {
-    margin: 6px 0;
-    font-family: "Lato Extended", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    line-height: 1.2;
-    text-rendering: optimizelegibility;
-}
+    padding-top: 0;
+    }
 
-/* Assignments */
-#assignment_show .assignment-title {
-    margin-bottom: 12px;
-}
-#assignment_show .student-assignment-overview {
-    padding: 6px 0;
-    margin: 0 0 18px 0;
-}
-#assignment_show .student-assignment-overview .value {
-    padding-right: 1em;
-}
-
-/* elements */
-.btn, .Button, .ui-button {
-    padding: 4px 8px;
-    margin-bottom: 0;
-    line-height: 22px;
-}
-.css-1mc6m81-baseButton__content {
-    transition: background 0.2s, transform 0.2s;
-    padding-left: 8px;
-    padding-right: 8px;
-}
-.css-11xkk0o-baseButton__children {
-    display: block;
-    padding-top: 4px;
-    padding-bottom: 4px;
-}
-.ic-app-course-nav-toggle {
-    margin-right: 12px;
-    padding: 0;
-    width: 36px;
-    height: 36px;
-}
-
-/* document preview */
-#doc_preview{
-    height: auto !important;
-}
-#doc_preview div{
-    overflow: hidden !important;
-    min-height: 47px;
-}
-#undefined{
-    height: 100% !important;
-    min-height: 0 !important;
-}
-
-/* condensed text */
-/* #wiki_page_show div p strong{
-    background-color: #f0f0f0;
-    padding: 8px;
-    margin: 0;
-} */
-#wiki_page_show div ul{
-    background-color: #f0f0f0;
-    padding: 8px;
-    padding-left: 33px;
-    margin: 0;
+    /* condensed text */
+    /* #wiki_page_show div p strong{
+        background-color: #f0f0f0;
+        padding: 8px;
+        margin: 0;
+    } */
+    #wiki_page_show div ul{
+        background-color: #f0f0f0;
+        padding: 8px;
+        padding-left: 33px;
+        margin: 0;
+    }
 }
