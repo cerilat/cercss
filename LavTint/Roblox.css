@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           LavTint: Roblox
 @namespace      lavtint-roblox
-@version        1.0.0
+@version        1.0.1
 @description    Customizable HSL-based theme for Roblox
 @author         dynai
 ==/UserStyle== */
@@ -1110,11 +1110,6 @@
     }
 
     /* misc */
-    div.flatpickr-calendar {
-        width: 276px;
-        margin-top: 12px;
-            font-family: Builder Sans, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
-    }
     .flatpickr-calendar {
         background: var(--dark-4);
         box-shadow: none;
