@@ -121,8 +121,8 @@ polygon[fill="#F5F5F5"]{
 }
 
 .Pages{
-    background-color: var(--dark-1)
+    background-color: var(--dark-4);
 }
 .Page-container[style="width: 974px; border-top: 1px dashed rgb(168, 168, 168);"]{
-    border-top: 1px solid var(--light-4) !important
+    border-top: 1px solid var(--light-4) !important;
 }
