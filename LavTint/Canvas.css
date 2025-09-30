@@ -2,8 +2,9 @@
 @name           LavTint: Canvas
 @namespace      canvas
 @version        1.0.1
-@description    Customizable HSL-based theme for Canvas/Instructure
 @author         dynai
+@homepageURL    https://github.com/twdynai/dynallib/blob/main/LavTint/Canvas.css
+@description    Customizable HSL-based theme for Canvas/Instructure
 ==/UserStyle== */
 
 @-moz-document domain("canvas.calpoly.edu"), domain("canvadocs-pdx-prod.inscloudgate.net") {
