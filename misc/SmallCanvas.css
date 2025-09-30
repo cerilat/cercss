@@ -1,13 +1,9 @@
 /* ==UserStyle==
 @name         SmallCanvas
 @namespace    Canvas
+@version      1.0.1
 @description  Condensed elements for Canvas
 @author       dynai (https://github.com/twdynai)
-@homepageURL  https://github.com/twdynai/dynallib
-@supportURL   https://github.com/twdynai/dynallib/issues
-@preprocessor stylus
-@version      1.0.0
-@license      MIT
 ==/UserStyle== */
 @-moz-document domain("canvas.calpoly.edu"), domain("canvadocs-pdx-prod.inscloudgate.net") {
     /* border-radius: 0; */
