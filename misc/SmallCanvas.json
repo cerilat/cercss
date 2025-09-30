@@ -155,9 +155,13 @@ h3 {
 #doc_preview{
     height: auto !important;
 }
+#doc_preview div{
+    overflow: hidden !important;
+    min-height: 47px;
+}
 #undefined{
-    height: 98% !important;
-    min-height: 600px !important;
+    height: 100% !important;
+    min-height: 0 !important;
 }
 
 /* condensed text */
