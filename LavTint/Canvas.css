@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           LavTint: Canvas
 @namespace      canvas
-@version        1.0.0
+@version        1.0.1
 @description    Customizable HSL-based theme for Canvas/Instructure
 @author         dynai
 ==/UserStyle== */
@@ -350,7 +350,6 @@
         color: var(--ic-link-color-darkened-10);
     }
     .css-py5qs-text {
-        font-family: LatoWeb, "Lato Extended", Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
         color: var(--ic-brand-font-color-dark-lightened-28);
     }
 
@@ -362,12 +361,6 @@
         border-color: var(--light-4);
     }
     #right-side .events_list .event-details:after, #right-side .events_list .todo-details:after, #right-side .to-do-list .event-details:after, #right-side .to-do-list .todo-details:after {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        height: 100%;
-        width: 12px;
         background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, var(--dark-1) 80%);
     }
     #right-side .right-side-list li em, #right-side .right-side-list li p {
@@ -401,7 +394,6 @@
         color: var(--ic-brand-font-color-dark-lightened-28);
     }
     .module-sequence-footer .module-sequence-footer-content {
-        height: 64px;
         background: transparent;
         border-top: 1px solid var(--light-4);
     }
@@ -437,8 +429,6 @@
         text-shadow: none;
     }
     .item-group-condensed .ig-row {
-        border-top-width: 0;
-        border-radius: 0;
         background: transparent;
         border-bottom: 1px solid var(--light-4);
     }
@@ -520,11 +510,7 @@
 
     /* people */
     .al-options {
-        box-sizing: border-box;
         background-color: var(--dark-4);
-        box-shadow: 0px 0px 6px rgba(0, 0, 0, .1);
-        position: absolute;
-        padding: 8px 0;
         border-color: var(--light-4);
     }
     .ui-menu-carat, .ui-menu-carat span {
@@ -552,7 +538,6 @@
         border-color: var(--light-4);
     }
     select {
-        width: 220px;
         border: 1px solid var(--light-4);
         background-color: var(--dark-2);
     }
@@ -570,9 +555,6 @@
     /* profile */
     .avatar {
         border: 2px solid var(--light-4);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
         background-color: var(--dark-4);
     }
     
