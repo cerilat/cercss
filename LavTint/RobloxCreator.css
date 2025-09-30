@@ -1,553 +1,555 @@
 /* ==UserStyle==
 @name           LavTint: Roblox Creator Dashboard
 @namespace      lavtint-roblox-creator
-@version        1.0.2
+@version        1.0.1
 @description    Customizable HSL-based theme for Roblox Creator Dashboard
 @author         dynai
 ==/UserStyle== */
 
-:root{
-    --accent-light-1: hsl(240,75%,75%);
-    --accent-light-2: hsl(240,65%,65%);
-    --accent-light-3: hsl(240,55%,55%);
-    --accent-light-4: hsl(240,45%,45%);
-    --accent-dark-2: hsl(240,35%,25%);
-    --accent-dark-1: hsl(240,25%,15%);
-    --dark-1: hsl(240,15%,10%);
-    --dark-2: hsl(240,15%,12.5%);
-    --dark-3: hsl(240,15%,15%);
-    --dark-4: hsl(240,15%,20%);
-    --light-1: hsl(240, 100%, 95%);
-    --light-2: hsl(240,25%,80%);
-    --light-3: hsl(240,15%,65%);
-    --light-4: hsl(240,15%,40%);
-    --btn-light-transparent: hsla(240, 100%, 80%, .1);
-    --btn-light-transparent-hover: hsla(240,75%,80%,.15);
-    --btn-dark-transparent: hsla(240,25%,5%,.1);
-    --btn-dark-transparent-hover: hsla(240,25%,5%,.15);
-}
-body {
-    color: var(--light-1);
-    background-color: var(--dark-1);
-}
-.web-blox-css-tss-1uwwn81-Grid-root-fullWidthContentV2 {
-    background-color: var(--dark-1);
-}
-
-/* type */
-.web-blox-css-tss-1m2sre3-Typography-h2-Typography-colorPrimary-Typography-root-root {
-    color: var(--light-1);
-}
-.web-blox-css-tss-x6pk7a-Typography-h3-Typography-colorPrimary-Typography-root-robuxAmountNumber {
-    color: var(--light-1);
-}
-.web-blox-css-tss-zeo9sh-Typography-h4-Typography-colorPrimary-Typography-root-root {
-    color: var(--light-1);
-}
-.web-blox-css-tss-25wxeu-Typography-h5-Typography-root-header {
-    color: var(--light-2);
-    background-color: var(--dark-3);
-}
-.web-blox-css-mui-g2v1nn-Typography-body1 {
-    color: var(--light-2);
-}
-.web-blox-css-mui-1d0xf5c-Typography-body1 {
-    color: var(--light-1);
-}
-.web-blox-css-mui-xjq734-Typography-body1 {
-    color: var(--light-1);
-}
-.web-blox-css-mui-1hkjmzd-Typography-body2 {
-    color: var(--light-1);
-}
-.web-blox-css-mui-n6uht6-Typography-body2.Mui-selected.Mui-disabled {
-    color: var(--light-2);
-    background-color: var(--btn-light-transparent);
-}
-.web-blox-css-mui-n6uht6-Typography-body2:hover {
-    background-color: var(--btn-light-transparent);
-}
-.web-blox-css-mui-1t1s6i5-Typography-body2 {
-    color: var(--light-1);
-}
-.web-blox-css-mui-1uznrro-Typography-body2 {
-    color: var(--light-1);
-}
-.web-blox-css-mui-vhzchx-Typography-body2 {
-    color: var(--light-2);
-}
-.web-blox-css-mui-11e7z8g-Typography-body2 {
-    color: var(--light-2);
-}
-.web-blox-css-mui-40nw0y.Mui-active {
-    color: var(--light-1);
-}
-.web-blox-css-tss-1th0azq-Typography-body2-Typography-colorSecondary-Typography-root {
-    color: var(--light-2);
-}
-.web-blox-css-tss-w0082-Typography-footer-Typography-colorSecondary-Typography-root {
-    color: var(--light-2);
-}
-.web-blox-css-mui-11c4vf5-Typography-body2 {
-    color: var(--light-1);
-}
-.web-blox-css-tss-1bn49vz-Typography-body2-Typography-colorDisabled-Typography-root {
-    color: var(--light-3);
-}
-.web-blox-css-mui-mnfbai-Typography-button.Mui-disabled {
-    color: var(--light-3);
-    background-color: var(--btn-light-transparent);
-}
-.web-blox-css-tss-hl1oq9-Link-colorPrimary-Link-root {
-    color: var(--accent-light-1);
-}
-.web-blox-css-tss-1h34wph-Link-colorPrimary-Link-root-link {
-    color: var(--accent-light-1);
-}
-.web-blox-css-tss-1bvwl34-Link-colorPrimary-Link-root-titleLink {
-    color: var(--accent-light-1);
-}
-.web-blox-css-tss-1vwvhci-Link-colorPrimary-Link-root-sidebarLink {
-    color: var(--light-1);
-}
-.web-blox-css-tss-iis9vc-Link-colorPrimary-Link-root-itemText {
-    color: var(--accent-light-1);
-}
-.web-blox-css-tss-12qcr6e-Button-text {
-    color: var(--accent-light-1);
-}
-.web-blox-css-tss-12qcr6e-Button-text:hover {
-    background-color: var(--btn-light-transparent);
-}
-.web-blox-css-tss-1t44hbi-listContainer-orderedList {
-    color: var(--light-2);
-}
-.web-blox-css-tss-1mgoh8y-Typography-code-Typography-colorPrimary-Typography-root-InlineCode-root-inlineCode {
-    color: var(--light-1);
-    background-color: var(--dark-4);
-}
-.web-blox-css-tss-5kp6xc-Typography-body1-Typography-colorPrimary-Typography-root {
-    color: var(--light-1);
-}
-.web-blox-css-tss-lpvvix-Typography-overline-Typography-colorSecondary-Typography-root-title {
-    color: var(--light-2);
-    background-color: var(--dark-1);
-}
-.web-blox-css-tss-d0yocm-Typography-overline-Typography-root-tableHeader {
-    color: var(--accent-light-1);
-}
-
-
-.web-blox-css-mui-1ujcvrb.Mui-checked {
-    color: var(--accent-light-4);
-}
-.web-blox-css-mui-hxl62j.Mui-checked:hover {
-    background-color: var(--accent-light-2);
-}
-.web-blox-css-tss-1hh082h-Switch-colorPrimary.Mui-checked .MuiSwitch-thumb {
-    background: var(--accent-light-2);
-}
-.web-blox-css-mui-1ujcvrb.Mui-checked + .MuiSwitch-track {
-    background: var(--accent-light-2);
-}
-.web-blox-css-tss-15gp1jn-Switch-switchBase {
-    color: var(--light-1);
-}
-.web-blox-css-mui-1ujcvrb:hover {
-    background-color: var(--btn-light-transparent);
-}
-.web-blox-css-tss-1hh082h-Switch-colorPrimary .MuiSwitch-thumb {
-    background-color: var(--light-1);
-}
-.web-blox-css-mui-1is98b {
-    background-color: var(--light-1);
-}
-
-/* topbar */
-.web-blox-css-tss-1bg6u9k-Grid-root-root {
-    background-color: var(--dark-3);
-}
-.web-blox-css-tss-1nfaxte-Tabs-root .MuiTab-root {
-    color: var(--light-2);
-}
-.web-blox-css-tss-1h1exal-Typography-largeLabel1-Typography-root-title-unselected {
-    color: var(--light-2);
-}
-.web-blox-css-tss-g7hk1c-Typography-largeLabel1-Typography-root-title-selected {
-    color: var(--light-1);
-}
-.web-blox-css-tss-bffjf-unselected {
-    color: var(--light-2);
-}
-.web-blox-css-tss-sao6ya-selected {
-    color: var(--light-1);
-}
-.web-blox-css-tss-13ltd1g-Badge-colorPrimary {
-    color: var(--light-1);
-    background: var(--accent-light-2);
-}
-.web-blox-css-tss-1pcglv7-Typography-avatarLetter {
-    color: var(--light-1);
-    background-color: var(--dark-4);
-}
-.web-blox-css-tss-1e4cgwb-Typography-largeLabel2-Typography-colorSecondary-Typography-root {
-    color: var(--light-2);
-}
-.web-blox-css-tss-rvxmi3-Tabs-root-tabs .MuiTab-root {
-    color: var(--light-2);
-}
-
-/* sidebar */
-.web-blox-css-tss-thnotf-Grid-root-primaryLeftNav {
-    background-color: var(--dark-2);
-}
-
-.web-blox-css-tss-1j6oqpt-Grid-root-contentV2 {
-    background-color: var(--dark-1);
-}
-
-/* buttons */
-.web-blox-css-tss-v4a5e7-toggleButton-root.Mui-selected {
-    background-color: var(--btn-light-transparent);
-}
-.web-blox-css-tss-v4a5e7-toggleButton-root.Mui-selected:hover {
-    background-color: var(--btn-light-transparent-hover);
-}
-.web-blox-css-tss-v4a5e7-toggleButton-root.Mui-selected[aria-pressed="true"] {
-    border: 1px solid var(--accent-light-2) !important;
-}
-.web-blox-css-tss-v4a5e7-toggleButton-root.Mui-selected[aria-pressed="true"] .web-blox-css-mui-7ijiz4 {
-    fill: var(--accent-light-1);
-}
-.web-blox-css-mui-1hi2ihz-Typography-button {
-    color: var(--light-1);
-}
-.web-blox-css-tss-v4a5e7-toggleButton-root[aria-pressed="false"] {
-    border: 1px solid var(--dark-4) !important;
-}
-.web-blox-css-tss-zsz32r-Typography-largeLabel1 {
-    color: var(--light-1);
-}
-.web-blox-css-tss-133gzca-Button-contained {
-    box-shadow: none;
-    color: var(--dark-1);
-    background-color: var(--light-1);
-}
-.web-blox-css-tss-133gzca-Button-contained:hover {
-    background-color: var(--light-2);
-}
-.web-blox-css-tss-198qoon-Radio-colorPrimary.Mui-checked {
-    color: var(--accent-light-2);
-}
-
-/* input fields */
-.web-blox-css-tss-1ue3q8d-OutlinedInput-root .MuiOutlinedInput-notchedOutline {
-    border-color: var(--dark-4);
-}
-.web-blox-css-tss-1ue3q8d-OutlinedInput-root:hover:not(.Mui-error) .MuiOutlinedInput-notchedOutline {
-    border-color: var(--light-2);
-}
-.web-blox-css-tss-1ue3q8d-OutlinedInput-root.Mui-focused:not(.Mui-error) .MuiOutlinedInput-notchedOutline {
-    border-color: var(--light-2);
-}
-.web-blox-css-mui-1ue5oxa.Mui-disabled {
-    -webkit-text-fill-color: var(--light-2);
-}
-.web-blox-css-mui-1kfu8gx-Typography-body1 {
-    color: var(--light-1);
-}
-
-/* input fields: tags */
-.web-blox-css-mui-aqva53-Typography-body1 {
-    background-color: var(--dark-3);
-    color: var(--light-1);
-}
-.web-blox-css-mui-i9f54k {
-    color: var(--light-2);
-}
-
-.web-blox-css-tss-xwrshw-Grid-root-createAssetZone-createAssetZoneEmpty {
-    border: 1px dashed var(--light-4);
-}
-
-
-.web-blox-css-mui-1refy80 {
-    background-color: var(--accent-light-2);
-}
-.web-blox-css-tss-vljq93-container-itemCardImg-background {
-    background-color: var(--dark-4);
-}
-
-/* chips */
-.web-blox-css-tss-1580q5d-Chip-filled {
-    color: var(--light-2);
-    background-color: var(--dark-3);
-}
-.web-blox-css-tss-rt0fza-Chip-filled {
-    color: var(--dark-1);
-    background-color: var(--light-1);
-}
-
-/* hover info */
-.web-blox-css-tss-3xxkgt-Typography-tooltip {
-    color: var(--dark-1);
-    background-color: var(--light-1);
-}
-.web-blox-css-tss-r63xqc-Tooltip-arrow {
-    color: var(--light-1);
-}
-
-
-
-/* docs */
-.web-blox-css-tss-18edtyj-paper-navigationBackground-drawerOpen.web-blox-css-tss-18edtyj-paper-navigationBackground-drawerOpen {
-    background: var(--dark-2);
-}
-.web-blox-css-tss-10vvpfb-Typography-overline-Typography-colorSecondary-Typography-root-navigationHeading-heading {
-    color: var(--light-2);
-}
-.web-blox-css-tss-2z1yu-TreeItem-root .MuiTreeItem-content.Mui-focused.Mui-selected, .web-blox-css-tss-2z1yu-TreeItem-root .MuiTreeItem-content.Mui-selected {
-    background-color: var(--btn-light-transparent-hover);
-}
-.web-blox-css-tss-2z1yu-TreeItem-root .MuiTreeItem-content.Mui-focused.Mui-selected:hover, .web-blox-css-tss-2z1yu-TreeItem-root .MuiTreeItem-content.Mui-selected:hover {
-    background-color: var(--btn-light-transparent-hover);
-}
-
-.web-blox-css-tss-pww80o-bottomWrapper {
-    background: var(--dark-2);
-}
-.web-blox-css-tss-10fm90d-Typography-h5-Typography-root-tabsTitle {
-    border-right: 1px solid var(--light-4);
-}
-.web-blox-css-tss-1b5shy3-Tabs-root-tabs .MuiTab-root {
-    color: var(--light-2);
-}
-.web-blox-css-tss-1b5shy3-Tabs-root-tabs .Mui-selected {
-    color: var(--light-1);
-}
-.web-blox-css-tss-moo7wv-Tabs-indicator {
-    background-color: var(--light-1);
-}
-
-.web-blox-css-tss-6nx5rm-Grid-root-container {
-    background: var(--dark-1);
-}
-
-.web-blox-css-tss-432uo4-Grid-root-container-sizeContainer {
-    background-color: var(--dark-1);
-}
-.web-blox-css-tss-17myqvf-Grid-root-root {
-    background-color: var(--dark-1);
-}
-.web-blox-css-tss-17q8njr-Grid-root-root {
-    background-color: var(--dark-1);
-}
-.web-blox-css-tss-1xvoe7q-Typography-footer-Typography-colorSecondary-Typography-root-copyright {
-    color: var(--light-2);
-}
-.web-blox-css-tss-mewlw8-IconButton-root {
-    color: var(--light-2);
-}
-
-/* main content */
-.web-blox-css-tss-9rhqli-listContainer {
-    color: var(--light-2);
-}
-
-.web-blox-css-tss-wjpu1d-Typography-code-Typography-colorPrimary-Typography-root-InlineCode-root-inlineCode {
-    color: var(--accent-light-1);
-    background-color: var(--btn-light-transparent);
-}
-.web-blox-css-tss-719v4m-Typography-captionHeader-Typography-colorSecondary-Typography-root {
-    color: var(--light-2);
-}
-.web-blox-css-tss-65yght-Typography-body1-Typography-root-parameterType {
-    color: var(--light-1);
-}
-.web-blox-css-tss-1vw6gvs-Label-root-tagLabel {
-    background-color: var(--btn-light-transparent);
-    color: var(--light-1);
-}
-.web-blox-css-tss-1mjizg1-Label-root-labelColor {
-    color: var(--accent-light-2);
-}
-.web-blox-css-tss-rw3ehs-icon-Label-iconSize {
-    stroke: var(--accent-light-2);
-}
-
-/* on this page */
-.web-blox-css-tss-1tfpukw-TreeItem-root-emptyNode .MuiTreeItem-content.Mui-focused.Mui-selected, .web-blox-css-tss-1tfpukw-TreeItem-root-emptyNode .MuiTreeItem-content.Mui-selected {
-    background-color: var(--btn-light-transparent-hover);
-}
-.web-blox-css-tss-1tfpukw-TreeItem-root-emptyNode .MuiTreeItem-content.Mui-focused.Mui-selected:hover, .web-blox-css-tss-1tfpukw-TreeItem-root-emptyNode .MuiTreeItem-content.Mui-selected:hover {
-    background-color: var(--btn-light-transparent-hover);
-}
-.web-blox-css-tss-15rnyn9-Typography-largeLabel2-Typography-largeLabel1-TreeItem-content-label.Mui-selected {
-    color: var(--light-1);
-}
-.web-blox-css-tss-15rnyn9-Typography-largeLabel2-Typography-largeLabel1-TreeItem-content-label {
-    color: var(--light-2);
-}
-.web-blox-css-mui-hcv06a-Typography-body1:hover {
-    background-color: var(--btn-light-transparent);
-}
-
-/* tables */
-table {
-    border-color: var(--dark-4);
-}
-.web-blox-css-tss-1rrx3a-TableCell-root {
-    border-bottom: 1px solid var(--dark-4);
-}
-.web-blox-css-tss-1u85a5j-TableRow-root-rowHoverBackground.MuiTableRow-hover:hover {
-    background-color: var(--btn-light-transparent);
-}
-.web-blox-css-tss-19nnso7-TableRow-root-tableRow.MuiTableRow-hover:hover {
-    background-color: var(--btn-light-transparent);
-}
-.web-blox-css-tss-2wxxqs-TableCell-root-dateColumn-xsInvisibleColumn, .web-blox-css-tss-qane59-TableCell-root-dateColumn-smInvisibleColumn, .web-blox-css-tss-5ncunp-TableCell-root-iconColumn {
-    border-bottom: 1px solid var(--dark-4);
-}
-.web-blox-css-tss-1jqbdez-IconButton-root-operationIcon-operationIcon {
-    color: var(--light-1);
-}
-.web-blox-css-tss-1i3qd80-IconButton-root-operationIcon-operationIcon {
-    backdrop-filter: blur(5px);
-    color: var(--light-1);
-}
-.web-blox-css-tss-1i3qd80-IconButton-root-operationIcon-operationIcon:hover {
-    background-color: var(--btn-light-transparent);
-}
-.web-blox-css-mui-19ri5qq.MuiTouchRipple-rippleVisible {
-    background-color: var(--btn-light-transparent);
-}
-.web-blox-css-mui-vaxpom {
-    color: var(--light-1);
-    border-color: var(--dark-4);
-}
-.web-blox-css-tss-ihqbj8-tableContainerBorder {
-        border: 1px solid var(--dark-4);
-}
-@media (min-width: 601px) and (max-width: 1520.95px) {
-    .web-blox-css-tss-1us7j4a-tableLayout-withColumnDivider-stickyFirstCellInRow.web-blox-css-tss-1us7j4a-tableLayout-withColumnDivider-stickyFirstCellInRow tr > :first-child {
-        background: var(--dark-1);
-        box-shadow: var(--btn-dark-transparent) 4px 0px 2px -2px;
+@-moz-document domain("create.roblox.com") {
+    :root{
+        --accent-light-1: hsl(240,75%,75%);
+        --accent-light-2: hsl(240,65%,65%);
+        --accent-light-3: hsl(240,55%,55%);
+        --accent-light-4: hsl(240,45%,45%);
+        --accent-dark-2: hsl(240,35%,25%);
+        --accent-dark-1: hsl(240,25%,15%);
+        --dark-1: hsl(240,15%,10%);
+        --dark-2: hsl(240,15%,12.5%);
+        --dark-3: hsl(240,15%,15%);
+        --dark-4: hsl(240,15%,20%);
+        --light-1: hsl(240, 100%, 95%);
+        --light-2: hsl(240,25%,80%);
+        --light-3: hsl(240,15%,65%);
+        --light-4: hsl(240,15%,40%);
+        --btn-light-transparent: hsla(240, 100%, 80%, .1);
+        --btn-light-transparent-hover: hsla(240,75%,80%,.15);
+        --btn-dark-transparent: hsla(240,25%,5%,.1);
+        --btn-dark-transparent-hover: hsla(240,25%,5%,.15);
     }
-}
-.web-blox-css-tss-1us7j4a-tableLayout-withColumnDivider-stickyFirstCellInRow {
-        border-top: 1px solid var(--dark-4);
-}
-.web-blox-css-tss-hy900l-TableCell-root-headerCell-tableCell-autoWidth {
-    border-bottom: 1px solid var(--dark-4);
-}
-.web-blox-css-tss-1us7j4a-tableLayout-withColumnDivider-stickyFirstCellInRow tr > td, .web-blox-css-tss-1us7j4a-tableLayout-withColumnDivider-stickyFirstCellInRow th {
-        border-right: 1px solid var(--dark-4);
-}
-.web-blox-css-tss-1izvzpb-TableCell-root-tableCell-autoWidth {
-    border-bottom: 1px solid var(--dark-4);
-}
-.web-blox-css-mui-40nw0y:hover {
-    color: var(--light-2);
-}
+    body {
+        color: var(--light-1);
+        background-color: var(--dark-1);
+    }
+    .web-blox-css-tss-1uwwn81-Grid-root-fullWidthContentV2 {
+        background-color: var(--dark-1);
+    }
+
+    /* type */
+    .web-blox-css-tss-1m2sre3-Typography-h2-Typography-colorPrimary-Typography-root-root {
+        color: var(--light-1);
+    }
+    .web-blox-css-tss-x6pk7a-Typography-h3-Typography-colorPrimary-Typography-root-robuxAmountNumber {
+        color: var(--light-1);
+    }
+    .web-blox-css-tss-zeo9sh-Typography-h4-Typography-colorPrimary-Typography-root-root {
+        color: var(--light-1);
+    }
+    .web-blox-css-tss-25wxeu-Typography-h5-Typography-root-header {
+        color: var(--light-2);
+        background-color: var(--dark-3);
+    }
+    .web-blox-css-mui-g2v1nn-Typography-body1 {
+        color: var(--light-2);
+    }
+    .web-blox-css-mui-1d0xf5c-Typography-body1 {
+        color: var(--light-1);
+    }
+    .web-blox-css-mui-xjq734-Typography-body1 {
+        color: var(--light-1);
+    }
+    .web-blox-css-mui-1hkjmzd-Typography-body2 {
+        color: var(--light-1);
+    }
+    .web-blox-css-mui-n6uht6-Typography-body2.Mui-selected.Mui-disabled {
+        color: var(--light-2);
+        background-color: var(--btn-light-transparent);
+    }
+    .web-blox-css-mui-n6uht6-Typography-body2:hover {
+        background-color: var(--btn-light-transparent);
+    }
+    .web-blox-css-mui-1t1s6i5-Typography-body2 {
+        color: var(--light-1);
+    }
+    .web-blox-css-mui-1uznrro-Typography-body2 {
+        color: var(--light-1);
+    }
+    .web-blox-css-mui-vhzchx-Typography-body2 {
+        color: var(--light-2);
+    }
+    .web-blox-css-mui-11e7z8g-Typography-body2 {
+        color: var(--light-2);
+    }
+    .web-blox-css-mui-40nw0y.Mui-active {
+        color: var(--light-1);
+    }
+    .web-blox-css-tss-1th0azq-Typography-body2-Typography-colorSecondary-Typography-root {
+        color: var(--light-2);
+    }
+    .web-blox-css-tss-w0082-Typography-footer-Typography-colorSecondary-Typography-root {
+        color: var(--light-2);
+    }
+    .web-blox-css-mui-11c4vf5-Typography-body2 {
+        color: var(--light-1);
+    }
+    .web-blox-css-tss-1bn49vz-Typography-body2-Typography-colorDisabled-Typography-root {
+        color: var(--light-3);
+    }
+    .web-blox-css-mui-mnfbai-Typography-button.Mui-disabled {
+        color: var(--light-3);
+        background-color: var(--btn-light-transparent);
+    }
+    .web-blox-css-tss-hl1oq9-Link-colorPrimary-Link-root {
+        color: var(--accent-light-1);
+    }
+    .web-blox-css-tss-1h34wph-Link-colorPrimary-Link-root-link {
+        color: var(--accent-light-1);
+    }
+    .web-blox-css-tss-1bvwl34-Link-colorPrimary-Link-root-titleLink {
+        color: var(--accent-light-1);
+    }
+    .web-blox-css-tss-1vwvhci-Link-colorPrimary-Link-root-sidebarLink {
+        color: var(--light-1);
+    }
+    .web-blox-css-tss-iis9vc-Link-colorPrimary-Link-root-itemText {
+        color: var(--accent-light-1);
+    }
+    .web-blox-css-tss-12qcr6e-Button-text {
+        color: var(--accent-light-1);
+    }
+    .web-blox-css-tss-12qcr6e-Button-text:hover {
+        background-color: var(--btn-light-transparent);
+    }
+    .web-blox-css-tss-1t44hbi-listContainer-orderedList {
+        color: var(--light-2);
+    }
+    .web-blox-css-tss-1mgoh8y-Typography-code-Typography-colorPrimary-Typography-root-InlineCode-root-inlineCode {
+        color: var(--light-1);
+        background-color: var(--dark-4);
+    }
+    .web-blox-css-tss-5kp6xc-Typography-body1-Typography-colorPrimary-Typography-root {
+        color: var(--light-1);
+    }
+    .web-blox-css-tss-lpvvix-Typography-overline-Typography-colorSecondary-Typography-root-title {
+        color: var(--light-2);
+        background-color: var(--dark-1);
+    }
+    .web-blox-css-tss-d0yocm-Typography-overline-Typography-root-tableHeader {
+        color: var(--accent-light-1);
+    }
 
 
-/* analytics */
-hr{
-    border: 1px solid var(--light-1);
-}
-.web-blox-css-mui-ot3dvx {
-    background: none;
-    color: var(--light-1);
-}
-/* publishing advance */
-.web-blox-css-mui-1xb8tpm {
-    color: var(--light-1);
-}
-.web-blox-css-tss-1jflqnk-Card-root-card {
-    background: var(--dark-2);
-}
-.web-blox-css-tss-18g3rqa-Card-root-card {
-    background: var(--dark-2);
-}
-.web-blox-css-mui-jo3ec3 {
-    background-color: var(--btn-light-transparent);
-}
-.web-blox-css-mui-1rdvs08:hover .MuiCardActionArea-focusHighlight {
-    opacity: 1;
-}
-.web-blox-css-tss-akc0o5-LinearProgress-colorPrimary {
-    background-color: var(--dark-4);
-}
-/* curve chart */
-.highcharts-markers path[fill="#3C64FA"]{
-    fill: var(--accent-light-2)
-}
-.highcharts-series path[stroke="#3C64FA"]{
-    stroke: var(--accent-light-2);
-}
-.highcharts-legend-item span div{
-    color: var(--light-1);
-}
-.highcharts-legend-item path[fill="#3C64FA"]{
-    fill: var(--accent-light-2);
-}
-.highcharts-legend-item path[stroke="#3C64FA"]{
-    stroke: var(--accent-light-2);
-}
-/* map */
-.highcharts-map-navigation path[fill="#ffffff"]{
-    fill: var(--light-1);
-    stroke: var(--light-2);
-}
+    .web-blox-css-mui-1ujcvrb.Mui-checked {
+        color: var(--accent-light-4);
+    }
+    .web-blox-css-mui-hxl62j.Mui-checked:hover {
+        background-color: var(--accent-light-2);
+    }
+    .web-blox-css-tss-1hh082h-Switch-colorPrimary.Mui-checked .MuiSwitch-thumb {
+        background: var(--accent-light-2);
+    }
+    .web-blox-css-mui-1ujcvrb.Mui-checked + .MuiSwitch-track {
+        background: var(--accent-light-2);
+    }
+    .web-blox-css-tss-15gp1jn-Switch-switchBase {
+        color: var(--light-1);
+    }
+    .web-blox-css-mui-1ujcvrb:hover {
+        background-color: var(--btn-light-transparent);
+    }
+    .web-blox-css-tss-1hh082h-Switch-colorPrimary .MuiSwitch-thumb {
+        background-color: var(--light-1);
+    }
+    .web-blox-css-mui-1is98b {
+        background-color: var(--light-1);
+    }
 
-.highcharts-map-navigation path[fill="#e6e6e6"]{
-    fill: var(--light-2) !important;
-    stroke: var(--light-1);
-}
-.highcharts-map-navigation path[stroke="#666666"]{
-    stroke: var(--light-4);
-}
-.highcharts-series g path{
-    stroke: var(--light-2);
-}
-.highcharts-series path[fill="rgb(60,100,250)"], .highcharts-series path[fill="#3C64FA"]{
-    fill: var(--accent-light-2);
-}
-.highcharts-series g path[fill="rgb(0,34,255)"], .highcharts-legend-item rect[fill="rgb(0,34,255)"]{
-    fill: var(--accent-dark-2);
-}
-.highcharts-series g path[fill="rgb(58,84,255)"], .highcharts-legend-item rect[fill="rgb(58,84,255)"]{
-    fill: var(--accent-light-4);
-}
-.highcharts-series g path[fill="rgb(115,134,255)"], .highcharts-legend-item rect[fill="rgb(115,134,255)"]{
-    fill: var(--accent-light-2);
-}
-.highcharts-series g path[fill="rgb(173,183,255)"], .highcharts-legend-item rect[fill="rgb(173,183,255)"]{
-    fill: var(--accent-light-1);
-}
-.highcharts-series g path[fill="rgb(230,233,255)"], .highcharts-legend-item rect[fill="rgb(230,233,255)"]{
-    fill: var(--light-1);
-}
-.highcharts-series g path[fill="#f7f7f7"]{
-    fill: none;
-    stroke: var(--dark-4);
-}
-/* ???? */
-.highcharts-axis-labels text{
-    color: var(--light-2) !important;
-    fill: var(--light-2) !important;
-}
-.highcharts-label div{
-    background-color: var(--light-1) !important;
-}
-.highcharts-label div div span span{
-    color: var(--dark-1) !important;
-}
-.highcharts-label span{
-    color: var(--dark-1) !important;
-}
+    /* topbar */
+    .web-blox-css-tss-1bg6u9k-Grid-root-root {
+        background-color: var(--dark-3);
+    }
+    .web-blox-css-tss-1nfaxte-Tabs-root .MuiTab-root {
+        color: var(--light-2);
+    }
+    .web-blox-css-tss-1h1exal-Typography-largeLabel1-Typography-root-title-unselected {
+        color: var(--light-2);
+    }
+    .web-blox-css-tss-g7hk1c-Typography-largeLabel1-Typography-root-title-selected {
+        color: var(--light-1);
+    }
+    .web-blox-css-tss-bffjf-unselected {
+        color: var(--light-2);
+    }
+    .web-blox-css-tss-sao6ya-selected {
+        color: var(--light-1);
+    }
+    .web-blox-css-tss-13ltd1g-Badge-colorPrimary {
+        color: var(--light-1);
+        background: var(--accent-light-2);
+    }
+    .web-blox-css-tss-1pcglv7-Typography-avatarLetter {
+        color: var(--light-1);
+        background-color: var(--dark-4);
+    }
+    .web-blox-css-tss-1e4cgwb-Typography-largeLabel2-Typography-colorSecondary-Typography-root {
+        color: var(--light-2);
+    }
+    .web-blox-css-tss-rvxmi3-Tabs-root-tabs .MuiTab-root {
+        color: var(--light-2);
+    }
 
-/* symbols */
-.web-blox-css-mui-zrxehm {
-    color: var(--light-1);
+    /* sidebar */
+    .web-blox-css-tss-thnotf-Grid-root-primaryLeftNav {
+        background-color: var(--dark-2);
+    }
+
+    .web-blox-css-tss-1j6oqpt-Grid-root-contentV2 {
+        background-color: var(--dark-1);
+    }
+
+    /* buttons */
+    .web-blox-css-tss-v4a5e7-toggleButton-root.Mui-selected {
+        background-color: var(--btn-light-transparent);
+    }
+    .web-blox-css-tss-v4a5e7-toggleButton-root.Mui-selected:hover {
+        background-color: var(--btn-light-transparent-hover);
+    }
+    .web-blox-css-tss-v4a5e7-toggleButton-root.Mui-selected[aria-pressed="true"] {
+        border: 1px solid var(--accent-light-2) !important;
+    }
+    .web-blox-css-tss-v4a5e7-toggleButton-root.Mui-selected[aria-pressed="true"] .web-blox-css-mui-7ijiz4 {
+        fill: var(--accent-light-1);
+    }
+    .web-blox-css-mui-1hi2ihz-Typography-button {
+        color: var(--light-1);
+    }
+    .web-blox-css-tss-v4a5e7-toggleButton-root[aria-pressed="false"] {
+        border: 1px solid var(--dark-4) !important;
+    }
+    .web-blox-css-tss-zsz32r-Typography-largeLabel1 {
+        color: var(--light-1);
+    }
+    .web-blox-css-tss-133gzca-Button-contained {
+        box-shadow: none;
+        color: var(--dark-1);
+        background-color: var(--light-1);
+    }
+    .web-blox-css-tss-133gzca-Button-contained:hover {
+        background-color: var(--light-2);
+    }
+    .web-blox-css-tss-198qoon-Radio-colorPrimary.Mui-checked {
+        color: var(--accent-light-2);
+    }
+
+    /* input fields */
+    .web-blox-css-tss-1ue3q8d-OutlinedInput-root .MuiOutlinedInput-notchedOutline {
+        border-color: var(--dark-4);
+    }
+    .web-blox-css-tss-1ue3q8d-OutlinedInput-root:hover:not(.Mui-error) .MuiOutlinedInput-notchedOutline {
+        border-color: var(--light-2);
+    }
+    .web-blox-css-tss-1ue3q8d-OutlinedInput-root.Mui-focused:not(.Mui-error) .MuiOutlinedInput-notchedOutline {
+        border-color: var(--light-2);
+    }
+    .web-blox-css-mui-1ue5oxa.Mui-disabled {
+        -webkit-text-fill-color: var(--light-2);
+    }
+    .web-blox-css-mui-1kfu8gx-Typography-body1 {
+        color: var(--light-1);
+    }
+
+    /* input fields: tags */
+    .web-blox-css-mui-aqva53-Typography-body1 {
+        background-color: var(--dark-3);
+        color: var(--light-1);
+    }
+    .web-blox-css-mui-i9f54k {
+        color: var(--light-2);
+    }
+
+    .web-blox-css-tss-xwrshw-Grid-root-createAssetZone-createAssetZoneEmpty {
+        border: 1px dashed var(--light-4);
+    }
+
+
+    .web-blox-css-mui-1refy80 {
+        background-color: var(--accent-light-2);
+    }
+    .web-blox-css-tss-vljq93-container-itemCardImg-background {
+        background-color: var(--dark-4);
+    }
+
+    /* chips */
+    .web-blox-css-tss-1580q5d-Chip-filled {
+        color: var(--light-2);
+        background-color: var(--dark-3);
+    }
+    .web-blox-css-tss-rt0fza-Chip-filled {
+        color: var(--dark-1);
+        background-color: var(--light-1);
+    }
+
+    /* hover info */
+    .web-blox-css-tss-3xxkgt-Typography-tooltip {
+        color: var(--dark-1);
+        background-color: var(--light-1);
+    }
+    .web-blox-css-tss-r63xqc-Tooltip-arrow {
+        color: var(--light-1);
+    }
+
+
+
+    /* docs */
+    .web-blox-css-tss-18edtyj-paper-navigationBackground-drawerOpen.web-blox-css-tss-18edtyj-paper-navigationBackground-drawerOpen {
+        background: var(--dark-2);
+    }
+    .web-blox-css-tss-10vvpfb-Typography-overline-Typography-colorSecondary-Typography-root-navigationHeading-heading {
+        color: var(--light-2);
+    }
+    .web-blox-css-tss-2z1yu-TreeItem-root .MuiTreeItem-content.Mui-focused.Mui-selected, .web-blox-css-tss-2z1yu-TreeItem-root .MuiTreeItem-content.Mui-selected {
+        background-color: var(--btn-light-transparent-hover);
+    }
+    .web-blox-css-tss-2z1yu-TreeItem-root .MuiTreeItem-content.Mui-focused.Mui-selected:hover, .web-blox-css-tss-2z1yu-TreeItem-root .MuiTreeItem-content.Mui-selected:hover {
+        background-color: var(--btn-light-transparent-hover);
+    }
+
+    .web-blox-css-tss-pww80o-bottomWrapper {
+        background: var(--dark-2);
+    }
+    .web-blox-css-tss-10fm90d-Typography-h5-Typography-root-tabsTitle {
+        border-right: 1px solid var(--light-4);
+    }
+    .web-blox-css-tss-1b5shy3-Tabs-root-tabs .MuiTab-root {
+        color: var(--light-2);
+    }
+    .web-blox-css-tss-1b5shy3-Tabs-root-tabs .Mui-selected {
+        color: var(--light-1);
+    }
+    .web-blox-css-tss-moo7wv-Tabs-indicator {
+        background-color: var(--light-1);
+    }
+
+    .web-blox-css-tss-6nx5rm-Grid-root-container {
+        background: var(--dark-1);
+    }
+
+    .web-blox-css-tss-432uo4-Grid-root-container-sizeContainer {
+        background-color: var(--dark-1);
+    }
+    .web-blox-css-tss-17myqvf-Grid-root-root {
+        background-color: var(--dark-1);
+    }
+    .web-blox-css-tss-17q8njr-Grid-root-root {
+        background-color: var(--dark-1);
+    }
+    .web-blox-css-tss-1xvoe7q-Typography-footer-Typography-colorSecondary-Typography-root-copyright {
+        color: var(--light-2);
+    }
+    .web-blox-css-tss-mewlw8-IconButton-root {
+        color: var(--light-2);
+    }
+
+    /* main content */
+    .web-blox-css-tss-9rhqli-listContainer {
+        color: var(--light-2);
+    }
+
+    .web-blox-css-tss-wjpu1d-Typography-code-Typography-colorPrimary-Typography-root-InlineCode-root-inlineCode {
+        color: var(--accent-light-1);
+        background-color: var(--btn-light-transparent);
+    }
+    .web-blox-css-tss-719v4m-Typography-captionHeader-Typography-colorSecondary-Typography-root {
+        color: var(--light-2);
+    }
+    .web-blox-css-tss-65yght-Typography-body1-Typography-root-parameterType {
+        color: var(--light-1);
+    }
+    .web-blox-css-tss-1vw6gvs-Label-root-tagLabel {
+        background-color: var(--btn-light-transparent);
+        color: var(--light-1);
+    }
+    .web-blox-css-tss-1mjizg1-Label-root-labelColor {
+        color: var(--accent-light-2);
+    }
+    .web-blox-css-tss-rw3ehs-icon-Label-iconSize {
+        stroke: var(--accent-light-2);
+    }
+
+    /* on this page */
+    .web-blox-css-tss-1tfpukw-TreeItem-root-emptyNode .MuiTreeItem-content.Mui-focused.Mui-selected, .web-blox-css-tss-1tfpukw-TreeItem-root-emptyNode .MuiTreeItem-content.Mui-selected {
+        background-color: var(--btn-light-transparent-hover);
+    }
+    .web-blox-css-tss-1tfpukw-TreeItem-root-emptyNode .MuiTreeItem-content.Mui-focused.Mui-selected:hover, .web-blox-css-tss-1tfpukw-TreeItem-root-emptyNode .MuiTreeItem-content.Mui-selected:hover {
+        background-color: var(--btn-light-transparent-hover);
+    }
+    .web-blox-css-tss-15rnyn9-Typography-largeLabel2-Typography-largeLabel1-TreeItem-content-label.Mui-selected {
+        color: var(--light-1);
+    }
+    .web-blox-css-tss-15rnyn9-Typography-largeLabel2-Typography-largeLabel1-TreeItem-content-label {
+        color: var(--light-2);
+    }
+    .web-blox-css-mui-hcv06a-Typography-body1:hover {
+        background-color: var(--btn-light-transparent);
+    }
+
+    /* tables */
+    table {
+        border-color: var(--dark-4);
+    }
+    .web-blox-css-tss-1rrx3a-TableCell-root {
+        border-bottom: 1px solid var(--dark-4);
+    }
+    .web-blox-css-tss-1u85a5j-TableRow-root-rowHoverBackground.MuiTableRow-hover:hover {
+        background-color: var(--btn-light-transparent);
+    }
+    .web-blox-css-tss-19nnso7-TableRow-root-tableRow.MuiTableRow-hover:hover {
+        background-color: var(--btn-light-transparent);
+    }
+    .web-blox-css-tss-2wxxqs-TableCell-root-dateColumn-xsInvisibleColumn, .web-blox-css-tss-qane59-TableCell-root-dateColumn-smInvisibleColumn, .web-blox-css-tss-5ncunp-TableCell-root-iconColumn {
+        border-bottom: 1px solid var(--dark-4);
+    }
+    .web-blox-css-tss-1jqbdez-IconButton-root-operationIcon-operationIcon {
+        color: var(--light-1);
+    }
+    .web-blox-css-tss-1i3qd80-IconButton-root-operationIcon-operationIcon {
+        backdrop-filter: blur(5px);
+        color: var(--light-1);
+    }
+    .web-blox-css-tss-1i3qd80-IconButton-root-operationIcon-operationIcon:hover {
+        background-color: var(--btn-light-transparent);
+    }
+    .web-blox-css-mui-19ri5qq.MuiTouchRipple-rippleVisible {
+        background-color: var(--btn-light-transparent);
+    }
+    .web-blox-css-mui-vaxpom {
+        color: var(--light-1);
+        border-color: var(--dark-4);
+    }
+    .web-blox-css-tss-ihqbj8-tableContainerBorder {
+            border: 1px solid var(--dark-4);
+    }
+    @media (min-width: 601px) and (max-width: 1520.95px) {
+        .web-blox-css-tss-1us7j4a-tableLayout-withColumnDivider-stickyFirstCellInRow.web-blox-css-tss-1us7j4a-tableLayout-withColumnDivider-stickyFirstCellInRow tr > :first-child {
+            background: var(--dark-1);
+            box-shadow: var(--btn-dark-transparent) 4px 0px 2px -2px;
+        }
+    }
+    .web-blox-css-tss-1us7j4a-tableLayout-withColumnDivider-stickyFirstCellInRow {
+            border-top: 1px solid var(--dark-4);
+    }
+    .web-blox-css-tss-hy900l-TableCell-root-headerCell-tableCell-autoWidth {
+        border-bottom: 1px solid var(--dark-4);
+    }
+    .web-blox-css-tss-1us7j4a-tableLayout-withColumnDivider-stickyFirstCellInRow tr > td, .web-blox-css-tss-1us7j4a-tableLayout-withColumnDivider-stickyFirstCellInRow th {
+            border-right: 1px solid var(--dark-4);
+    }
+    .web-blox-css-tss-1izvzpb-TableCell-root-tableCell-autoWidth {
+        border-bottom: 1px solid var(--dark-4);
+    }
+    .web-blox-css-mui-40nw0y:hover {
+        color: var(--light-2);
+    }
+
+
+    /* analytics */
+    hr{
+        border: 1px solid var(--light-1);
+    }
+    .web-blox-css-mui-ot3dvx {
+        background: none;
+        color: var(--light-1);
+    }
+    /* publishing advance */
+    .web-blox-css-mui-1xb8tpm {
+        color: var(--light-1);
+    }
+    .web-blox-css-tss-1jflqnk-Card-root-card {
+        background: var(--dark-2);
+    }
+    .web-blox-css-tss-18g3rqa-Card-root-card {
+        background: var(--dark-2);
+    }
+    .web-blox-css-mui-jo3ec3 {
+        background-color: var(--btn-light-transparent);
+    }
+    .web-blox-css-mui-1rdvs08:hover .MuiCardActionArea-focusHighlight {
+        opacity: 1;
+    }
+    .web-blox-css-tss-akc0o5-LinearProgress-colorPrimary {
+        background-color: var(--dark-4);
+    }
+    /* curve chart */
+    .highcharts-markers path[fill="#3C64FA"]{
+        fill: var(--accent-light-2)
+    }
+    .highcharts-series path[stroke="#3C64FA"]{
+        stroke: var(--accent-light-2);
+    }
+    .highcharts-legend-item span div{
+        color: var(--light-1);
+    }
+    .highcharts-legend-item path[fill="#3C64FA"]{
+        fill: var(--accent-light-2);
+    }
+    .highcharts-legend-item path[stroke="#3C64FA"]{
+        stroke: var(--accent-light-2);
+    }
+    /* map */
+    .highcharts-map-navigation path[fill="#ffffff"]{
+        fill: var(--light-1);
+        stroke: var(--light-2);
+    }
+
+    .highcharts-map-navigation path[fill="#e6e6e6"]{
+        fill: var(--light-2) !important;
+        stroke: var(--light-1);
+    }
+    .highcharts-map-navigation path[stroke="#666666"]{
+        stroke: var(--light-4);
+    }
+    .highcharts-series g path{
+        stroke: var(--light-2);
+    }
+    .highcharts-series path[fill="rgb(60,100,250)"], .highcharts-series path[fill="#3C64FA"]{
+        fill: var(--accent-light-2);
+    }
+    .highcharts-series g path[fill="rgb(0,34,255)"], .highcharts-legend-item rect[fill="rgb(0,34,255)"]{
+        fill: var(--accent-dark-2);
+    }
+    .highcharts-series g path[fill="rgb(58,84,255)"], .highcharts-legend-item rect[fill="rgb(58,84,255)"]{
+        fill: var(--accent-light-4);
+    }
+    .highcharts-series g path[fill="rgb(115,134,255)"], .highcharts-legend-item rect[fill="rgb(115,134,255)"]{
+        fill: var(--accent-light-2);
+    }
+    .highcharts-series g path[fill="rgb(173,183,255)"], .highcharts-legend-item rect[fill="rgb(173,183,255)"]{
+        fill: var(--accent-light-1);
+    }
+    .highcharts-series g path[fill="rgb(230,233,255)"], .highcharts-legend-item rect[fill="rgb(230,233,255)"]{
+        fill: var(--light-1);
+    }
+    .highcharts-series g path[fill="#f7f7f7"]{
+        fill: none;
+        stroke: var(--dark-4);
+    }
+    /* ???? */
+    .highcharts-axis-labels text{
+        color: var(--light-2) !important;
+        fill: var(--light-2) !important;
+    }
+    .highcharts-label div{
+        background-color: var(--light-1) !important;
+    }
+    .highcharts-label div div span span{
+        color: var(--dark-1) !important;
+    }
+    .highcharts-label span{
+        color: var(--dark-1) !important;
+    }
+
+    /* symbols */
+    .web-blox-css-mui-zrxehm {
+        color: var(--light-1);
+    }
 }
