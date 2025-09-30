@@ -1,10 +1,11 @@
 /* ==UserStyle==
 @name           LavTint: Roblox Creator Dashboard
 @namespace      lavtint-roblox-creator
-@version        1.0.0
+@version        1.0.1
 @description    Customizable HSL-based theme for Roblox Creator Dashboard
 @author         dynai
 ==/UserStyle== */
+
 :root{
     --accent-light-1: hsl(240,75%,75%);
     --accent-light-2: hsl(240,65%,65%);
@@ -266,8 +267,6 @@ body {
 }
 
 .web-blox-css-tss-xwrshw-Grid-root-createAssetZone-createAssetZoneEmpty {
-    height: 280px;
-    width: 100%;
     border: 1px dashed var(--light-4);
 }
 
@@ -276,13 +275,6 @@ body {
     background-color: var(--accent-light-2);
 }
 .web-blox-css-tss-vljq93-container-itemCardImg-background {
-    padding-top: 100%;
-    position: relative;
-    overflow: hidden;
-    display: inline-block;
-    width: 250px;
-    height: 250px;
-    border-radius: 8px;
     background-color: var(--dark-4);
 }
 
