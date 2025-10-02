@@ -1,13 +1,13 @@
 /* ==UserStyle==
 @name           LavTint: Canvas
 @namespace      canvas
-@version        1.0.1
+@version        1.0.2
 @author         dynai
 @homepageURL    https://github.com/twdynai/dynallib/blob/main/LavTint/Canvas.css
 @description    Customizable HSL-based theme for Canvas/Instructure
 ==/UserStyle== */
 
-@-moz-document domain("canvas.calpoly.edu"), domain("canvadocs-pdx-prod.inscloudgate.net") {
+@-moz-document domain("canvas.calpoly.edu"), domain("canvadocs-pdx-prod.inscloudgate.net"), domain("idp.calpoly.edu") {
     :root{
         --accent-light-1: hsl(240,75%,75%);
         --accent-light-2: hsl(240,65%,65%);
@@ -97,6 +97,9 @@
     .ic-app-header__menu-list-item.ic-app-header__menu-list-item--active .ic-app-header__menu-list-link {
         background: var(--ic-link-color-darkened-10);
     }
+    .ic-app-header__menu-list-item.ic-app-header__menu-list-item--active .ic-app-header__menu-list-link:focus {
+        box-shadow: inset 0 0 0 .125rem var(--light-4);
+    }
 
     /* typography */
     .css-1xzbmtk-view-listItem {
@@ -163,6 +166,29 @@
     .ic-Table td {
         border-bottom-color: var(--light-4);
     }
+    .course-list-table .course-list-sort-icon {
+        color: var(--ic-brand-font-color-dark-lightened-15);
+    }
+    #wiki_page_show div ul {
+        background-color: #0000 !important;
+    }
+    table[style*="background-color: #fbeeb8"]{
+        background-color: var(--dark-4) !important;
+        border-color: var(--light-4)
+    }
+    .course-list-unpublished-course-row {
+        background: var(--dark-2);
+    }
+    .course-list-table .course-list-table-row:hover{
+        background: var(--btn-light-transparent);
+    }
+    .course-list-favorite-course {
+        color: var(--ic-brand-primary);
+    }
+    .course-list-unpublished-course{
+        color: var(--ic-brand-font-color-dark);
+        font-weight: 600;
+    }
 
     /* other basic elements */
     hr {
@@ -170,6 +196,12 @@
     }
     .menu-item__text {
         color: var(--light-1);
+    }
+    a .menu-item__text {
+        background-color: var(--dark-4);
+    }
+    .menu-item__text::after {
+        border-right-color: var(--dark-4);
     }
     .css-1fgv84d-textInput__facade {
         border: 0.0625rem solid var(--light-4);
@@ -273,11 +305,19 @@
         background: var(--btn-light-transparent-hover);
     }
     .css-y9piph-view--inlineBlock-baseButton.css-y9piph-view--inlineBlock-baseButton.css-y9piph-view--inlineBlock-baseButton.css-y9piph-view--inlineBlock-baseButton.css-y9piph-view--inlineBlock-baseButton.css-y9piph-view--inlineBlock-baseButton.css-y9piph-view--inlineBlock-baseButton.css-y9piph-view--inlineBlock-baseButton.css-y9piph-view--inlineBlock-baseButton.css-y9piph-view--inlineBlock-baseButton:focus {
-        outline-offset: calc(0.1875rem);
         outline-color: var(--dark-4);
     }
     .css-2ysm9b-view-link:-webkit-any(a), .css-2ysm9b-view-link:-webkit-any(button) {
         color: var(--accent-light-1);
+    }
+    .css-2ysm9b-view-link:-webkit-any(a):hover, .css-2ysm9b-view-link:-webkit-any(button):hover, .css-2ysm9b-view-link:-webkit-any(a):active, .css-2ysm9b-view-link:-webkit-any(button):active {
+        color: var(--ic-link-color-darkened-10);
+    }
+    .css-2ysm9b-view-link.css-2ysm9b-view-link.css-2ysm9b-view-link.css-2ysm9b-view-link.css-2ysm9b-view-link.css-2ysm9b-view-link.css-2ysm9b-view-link.css-2ysm9b-view-link.css-2ysm9b-view-link.css-2ysm9b-view-link:focus {
+        outline-color: var(--ic-link-color-darkened-10);
+    }
+        .css-2ysm9b-view-link:-webkit-any(a):focus, .css-2ysm9b-view-link:-webkit-any(button):focus {
+        color: var(--ic-link-color-darkened-10);
     }
 
     /* topbar-nav */
@@ -559,6 +599,104 @@
         background-color: var(--dark-4);
     }
     
+    /* inbox */
+    /* header */
+    .css-q78mg4-view--block {
+        color: var(--ic-brand-font-color-dark);
+        background: var(--dark-2);
+        border-color: var(--light-4);
+    }
+    .css-1x97g53-view--inlineBlock {
+        color: var(--ic-brand-font-color-dark);
+        background: var(--dark-2);
+        border-color: var(--light-4);
+    }
+    .css-j1vhxs-view--block-options__list {
+        color: var(--ic-brand-font-color-dark);
+        background: #0000;
+    }
+    .css-x9heth-view--inlineBlock-baseButton {
+        color: var(--ic-brand-font-color-dark);
+    }
+    .css-ml0esy-textInput__facade {
+        border: 0.0625rem solid var(--light-4);
+        background: var(--dark-4);
+        color: var(--ic-brand-font-color-dark);
+    }
+    .css-1cus1qa-view--block {
+        color: var(--ic-brand-font-color-dark);
+        background: var(--dark-2);
+    }
+    .css-1vvh0w0-optionItem {
+        color: var(--ic-brand-font-color-dark);
+        background: none;
+    }
+    .css-m110ih-optionItem {
+        color: var(--ic-brand-font-color-dark);
+        background: var(--dark-4);
+    }
+    .css-wlckwd-optionItem {
+        color: var(--ic-brand-font-color-dark);
+        background: var(--dark-4);
+    }
+    .css-u619qk-optionItem {
+        color: var(--ic-brand-font-color-dark);
+        background: var(--dark-4);
+    }
+    .css-ml0esy-textInput__facade::before {
+        border: 0.125rem solid var(--light-4);
+    }
+    .css-t3k3bl-baseButton__content {
+        color: var(--ic-brand-font-color-dark);
+        background: var(--dark-4);
+        border-color: var(--light-4);
+    }
+    .css-x9heth-view--inlineBlock-baseButton:hover > [class$="-baseButton__content"] {
+        background: var(--light-4);
+    }
+    .css-198nlxm-view--block {
+        color: var(--ic-brand-font-color-dark);
+        background: var(--dark-2);
+        border-color: var(--light-4);
+    }
+    .css-1rf7x3g-separator {
+        background: var(--light-4);
+    }
+    .css-10mdthd-optionItem {
+        color: var(--ic-brand-font-color-dark);
+        background: var(--dark-2);
+    }
+    /* email list */
+    .css-1d450wh-view, .css-1xmuay2-view {
+        border-color: var(--light-4);
+    }
+    div[style*="box-shadow: rgb(0, 142, 226)"] {
+        box-shadow: var(--ic-brand-primary) 4px 0 0 inset !important;
+    }
+    div[style*="rgb(229, 242, 248)"] {
+        background-color: var(--dark-4) !important;
+    }
+    .css-1fagt9e-checkboxFacade__facade, .css-11tbm8m-checkboxFacade__facade {
+        color: var(--ic-brand-font-color-dark);
+        background: var(--dark-4);
+        border-color: var(--light-4);
+    }
+    .css-86ocfk-baseButton__content {
+        color: var(--light-2);
+        border-color: var(--light-4);
+    }
+    .css-1m96nft-view--inlineBlock-baseButton.css-1m96nft-view--inlineBlock-baseButton.css-1m96nft-view--inlineBlock-baseButton.css-1m96nft-view--inlineBlock-baseButton.css-1m96nft-view--inlineBlock-baseButton.css-1m96nft-view--inlineBlock-baseButton.css-1m96nft-view--inlineBlock-baseButton.css-1m96nft-view--inlineBlock-baseButton.css-1m96nft-view--inlineBlock-baseButton.css-1m96nft-view--inlineBlock-baseButton:focus {
+        outline-color: var(--light-4);
+    }
+    
+    .css-1r0hxpl-text {
+        color: var(--ic-brand-primary);
+    }
+    .css-utzp64-view--inlineBlock-badge {
+        color: var(--ic-brand-font-color-dark);
+        background: var(--dark-4);
+    }
+    
     
     
     /* canvasdocs */
@@ -602,5 +740,43 @@
     }
     .Page-container[style="width: 974px; border-top: 1px dashed rgb(168, 168, 168);"]{
         border-top: 1px solid var(--light-4) !important;
+    }
+
+
+
+    /* cal poly login */
+    .cls-3,.cls-6 {
+        fill: var(--ic-brand-primary);
+    }
+    .cls-5 {
+        fill: var(--dark-4)
+    }
+    .container {
+    background: var(--dark-3);
+        border-color: var(--ic-brand-primary);
+        color: var(--ic-brand-font-color-dark);
+    }
+    .form-field {
+        background: var(--dark-4);
+        border-color: var(--light-4);
+    }
+    .form-field:focus, .form-button:focus {
+        outline-color: var(--light-4);
+    }
+    .form-field-focus, .form-field:focus, input[type="text"]:focus {
+        color: var(--ic-brand-font-color-dark);
+    }
+    .form-field::placeholder{
+        color: var(--ic-brand-font-color-dark-lightened-15)
+    }
+    .form-element-wrapper a:link, .form-element-wrapper a:visited{
+        color: var(--ic-link-color)
+    }
+    .form-button {
+        background: var(--btn-light-transparent);
+        color: var(--ic-brand-font-color-dark);
+    }
+    .form-button:hover {
+        background: var(--btn-light-transparent-hover);
     }
 }
