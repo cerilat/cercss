@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           LavTint: Canvas
 @namespace      canvas
-@version        1.1.0
+@version        1.1.1
 @author         dynai
 @homepageURL    https://github.com/cerilat/cercss/blob/main/LavTint/Canvas.css
 @description    Customizable HSL-based theme for Canvas/Instructure
@@ -155,6 +155,18 @@
     .css-1r098rf-view--inlineBlock-baseButton.css-1r098rf-view--inlineBlock-baseButton.css-1r098rf-view--inlineBlock-baseButton.css-1r098rf-view--inlineBlock-baseButton.css-1r098rf-view--inlineBlock-baseButton.css-1r098rf-view--inlineBlock-baseButton.css-1r098rf-view--inlineBlock-baseButton.css-1r098rf-view--inlineBlock-baseButton.css-1r098rf-view--inlineBlock-baseButton.css-1r098rf-view--inlineBlock-baseButton:focus {
         outline-color: var(--light-4);
     }
+    
+    /* input */
+    textarea, input[type=text], input[type=password], input[type=datetime], input[type=datetime-local], input[type=date], input[type=month], input[type=time], input[type=week], input[type=number], input[type=email], input[type=url], input[type=search], input[type=tel], input[type=color], .uneditable-input {
+        background-color: var(--dark-4);
+        border-color: var(--light-4);
+    }
+    #submit_assignment .submission_comment_textarea::placeholder {
+        color: var(--ic-brand-font-color-dark-lightened-28)
+    }
+    #submit_assignment .submission_comment_textarea.focus_or_content::placeholder {
+        color: var(--ic-brand-font-color-dark-lightened-15)
+    }
 
     /* tables */
     .ic-Table th {
@@ -265,6 +277,101 @@
     .css-yhtx8j-contextView__arrow::after {
         border-inline-color: transparent var(--dark-4);
     }
+    .css-1990avv-contextView__arrow::after {
+        border-inline-color: var(--dark-4) transparent;
+    }
+    .css-1990avv-contextView__arrow {
+        border-color: transparent var(--light-4);
+        border-inline-color: var(--light-4) transparent;
+    }
+    /* text entry and submission */
+    .canvas-rce__skins--root {
+        background-color: transparent;
+    }
+    .tox .tox-edit-area.active, .tox .tox-edit-area.active iframe {
+        border-color: var(--light-4);
+    }
+    .tox{
+        color: var(--ic-brand-font-color-dark);
+    }
+    .tox .tox-menu {
+        background-color: var(--dark-4);
+        border-color: var(--light-4);
+    }
+    .tox .tox-collection__item {
+        color: var(--ic-brand-font-color-dark);
+    }
+    .tox .tox-collection--list .tox-collection__item--enabled {
+        background-color: var(--btn-light-transparent);
+        color: var(--ic-brand-font-color-dark);
+    }
+    .tox .tox-collection--list .tox-collection__group {
+        border-color: var(--light-4);
+    }
+    .tox .tox-collection__item-caret svg {
+        fill: var(--ic-brand-font-color-dark-lightened-15);
+    }
+    .tox .tox-collection--list .tox-collection__item--active, .tox .tox-collection--list .tox-collection__item--active:not(.tox-collection__item--state-disabled) {
+        background-color: var(--btn-light-transparent-hover);
+        color: var(--ic-brand-font-color-dark);
+    }
+    .tox .tox-collection__item-accessory {
+        color: var(--ic-brand-font-color-dark-lightened-15);
+    }
+    .tox .tox-insert-table-picker > div {
+        border-color: var(--light-4);
+    }
+    .tox .tox-insert-table-picker .tox-insert-table-picker__selected {
+        background-color: var(--btn-light-transparent-hover);
+        border-color: var(--light-4);
+    }
+    .tox .tox-insert-table-picker__label {
+        color: var(--ic-brand-font-color-dark);
+    }
+    .tox:not(.tox-tinymce-inline) .tox-editor-header {
+        background-color: var(--dark-4);
+    }
+    .tox .tox-menubar+.tox-toolbar, .tox .tox-menubar+.tox-toolbar-overlord .tox-toolbar__primary {
+        background: none;
+        border-top: 1px solid var(--light-4);
+    }
+    .tox .tox-menubar, .tox .tox-toolbar-overlord, .tox .tox-split-button .tox-tbtn.tox-split-button__chevron {
+        background: none;
+    }
+    .tox .tox-mbtn, .tox .tox-tbtn {
+        color: var(--ic-brand-font-color-dark);
+    }
+    .tox .tox-tbtn svg, .tox .tox-tbtn:hover svg, g[fill="#2B3B46"], path[fill="#2B3B46"] {
+        fill: var(--ic-brand-font-color-dark)
+    }
+        .tox .tox-tbtn:hover, .tox .tox-split-button:hover, .tox .tox-tbtn.tox-tbtn--enabled:hover, .tox .tox-split-button .tox-tbtn.tox-split-button__chevron:hover {
+        background: var(--btn-light-transparent-hover);
+    }
+    .tox .tox-mbtn:hover:not(:disabled):not(.tox-mbtn--active) {
+        background: var(--btn-light-transparent-hover);
+        color: var(--ic-brand-font-color-dark);
+    }
+    .tox .tox-mbtn:hover:not(:disabled), .tox .tox-mbtn--active {
+        background: var(--btn-light-transparent-hover);
+        color: var(--ic-brand-font-color-dark);
+    }
+    .tox .tox-mbtn:focus:not(:disabled) {
+        color: var(--ic-brand-font-color-dark);
+        box-shadow: 0 0 0 2px var(--light-4);
+    }
+    .tox .tox-edit-area {
+        border-color: var(--light-4);
+    }
+    .tox .tox-edit-area__iframe {
+        background-color: transparent;
+        border: 0.0625rem solid transparent;
+    }
+    .css-y9piph-view--inlineBlock-baseButton {
+        color: var(--ic-brand-font-color-dark);
+    }
+    .css-14pna4t-baseButton__content, .css-npex6t-baseButton__content {
+        color: var(--ic-brand-font-color-dark);
+}
     /* document preview */
     .css-1vgfdz9-mask {
         background: none;
@@ -413,6 +520,12 @@
     #right-side .events_list li.event i.icon-check, #right-side .events_list li.todo i.icon-check, #right-side .to-do-list li.event i.icon-check, #right-side .to-do-list li.todo i.icon-check {
         color: var(--ic-brand-accent);
     }
+    #right-side .details .header {
+        color: var(--ic-brand-font-color-dark);
+    }
+    #sidebar_content .details .content .comments .comment .signature {
+        color: var(--ic-brand-font-color-dark-lightened-28);
+    }
 
     /* dashboard */
     .ic-Dashboard-header__layout {
@@ -551,6 +664,24 @@
     .css-ki6rdt-view-listItem:not(:first-of-type) {
         border-top: 0.0625rem solid var(--light-4);
     }
+    
+    /* assignments */
+        #assignment_show .student-assignment-overview {
+        border-color: var(--light-4);
+    }
+    .css-19jkjs4-fileDrop__labelContent {
+        border-color: var(--light-4);
+    }
+    .css-19jkjs4-fileDrop__labelContent:hover {
+        border-color: var(--light-3);
+    }
+    .css-fgdcmk-view {
+        color: var(--ic-brand-font-color-dark);
+        background: var(--btn-light-transparent);
+    }
+    .css-c7i7w4-text {
+        color: var(--ic-brand-font-color-dark-lightened-28);
+    }
 
     /* people */
     .al-options {
@@ -565,6 +696,10 @@
     }
     .ui-tabs .ui-tabs-nav {
         border-bottom-color: var(--light-4);
+    }
+    .ui-tabs .ui-tabs-nav li.ui-state-focus, .ui-tabs .ui-tabs-nav li.ui-state-focus.ui-tabs-active {
+        border-color: var(--light-4);
+        background: var(--btn-light-transparent);
     }
     .ui-tabs .ui-tabs-nav li.ui-tabs-active, .ui-tabs .ui-tabs-nav li.ui-tabs-active.ui-state-hover, .ui-tabs .ui-tabs-nav li.ui-tabs-active:hover {
         border-color: var(--light-4);
