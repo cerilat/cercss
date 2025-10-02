@@ -1,9 +1,9 @@
 /* ==UserStyle==
 @name           LavTint: Canvas
 @namespace      canvas
-@version        1.0.2
+@version        1.1.0
 @author         dynai
-@homepageURL    https://github.com/twdynai/dynallib/blob/main/LavTint/Canvas.css
+@homepageURL    https://github.com/cerilat/cercss/blob/main/LavTint/Canvas.css
 @description    Customizable HSL-based theme for Canvas/Instructure
 ==/UserStyle== */
 
@@ -168,6 +168,9 @@
     }
     .course-list-table .course-list-sort-icon {
         color: var(--ic-brand-font-color-dark-lightened-15);
+    }
+    .course-list-table .course-list-sort-icon.sorted {
+        color: var(--ic-brand-primary);
     }
     #wiki_page_show div ul {
         background-color: #0000 !important;
