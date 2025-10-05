@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           LavTint: Roblox
 @namespace      lavtint-roblox
-@version        1.0.2
+@version        1.1.0
 @description    Customizable HSL-based theme for Roblox
 @author         dynai
 ==/UserStyle== */
@@ -117,7 +117,7 @@
     .dark-theme .text-info{
         color: var(--light-2);
     } */
-    .dark-theme .text-robux {
+    .dark-theme .text-robux, .dark-theme .text-robux-lg {
         color: var(--light-1);
     }
     .dark-theme .text-robux-tile {
@@ -454,6 +454,10 @@
     .dark-theme #buy-robux-popover-menu li a, .dark-theme #settings-popover-menu li a {
         color: var(--light-1);
     }
+    /* pills */
+    .dark-theme .item-details-section .pills-container .pill {
+        background-color: var(--dark-2);
+    }
     /* nav sidebar */
     .dark-theme .rbx-left-col {
         background-color: var(--dark-2);
@@ -494,6 +498,10 @@
         border-color: var(--dark-3);
     }
 
+    /* loading */
+    .dark-theme .grid-item-container.game-card-container.game-card-loading .game-card-name.game-name-title.shimmer {
+        background-color: var(--dark-4);
+    }
     /* tile: games */
     .dark-theme .game-card-info .info-label {
         color: var(--light-3);
