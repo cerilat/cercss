@@ -1,8 +1,8 @@
 /* ==UserStyle==
 @name           LavTint: Canvas
 @namespace      canvas
-@version        1.1.1
-@author         dynai
+@version        1.1.2
+@author         cerilat
 @homepageURL    https://github.com/cerilat/cercss/blob/main/LavTint/Canvas.css
 @description    Customizable HSL-based theme for Canvas/Instructure
 ==/UserStyle== */
@@ -204,6 +204,16 @@
         color: var(--ic-brand-font-color-dark);
         font-weight: 600;
     }
+    
+    /* popups */
+    .css-zfj2ro-mask {
+        background: var(--btn-dark-transparent-hover);
+    }
+    .css-mh7209-modal, .css-1u9u9of-modalHeader, .css-18igyq0-view-table, .css-c61mc8-head,.css-1otg65j-view-row, .css-md78hg-colHeader, .css-a22qhn-view-cell {
+        border-color: var(--light-4);
+        background: var(--dark-4);
+        color: var(--ic-brand-font-color-dark);
+    }
 
     /* other basic elements */
     hr {
@@ -285,6 +295,17 @@
         border-inline-color: var(--light-4) transparent;
     }
     /* text entry and submission */
+    .css-1sbid0x-view--inlineBlock-baseButton {
+        color: var(--ic-brand-font-color-dark);
+    }
+    .css-8vvv7u-baseButton__content {
+        color: var(--ic-brand-font-color-dark);
+        border-color: var(--ic-brand-font-color-dark);
+    }
+    .css-1sbid0x-view--inlineBlock-baseButton.css-1sbid0x-view--inlineBlock-baseButton.css-1sbid0x-view--inlineBlock-baseButton.css-1sbid0x-view--inlineBlock-baseButton.css-1sbid0x-view--inlineBlock-baseButton.css-1sbid0x-view--inlineBlock-baseButton.css-1sbid0x-view--inlineBlock-baseButton.css-1sbid0x-view--inlineBlock-baseButton.css-1sbid0x-view--inlineBlock-baseButton.css-1sbid0x-view--inlineBlock-baseButton:focus {
+        outline-offset: calc(0.1875rem);
+        outline-color: var(--light-4);
+    }
     .canvas-rce__skins--root {
         background-color: transparent;
     }
@@ -346,6 +367,15 @@
     }
         .tox .tox-tbtn:hover, .tox .tox-split-button:hover, .tox .tox-tbtn.tox-tbtn--enabled:hover, .tox .tox-split-button .tox-tbtn.tox-split-button__chevron:hover {
         background: var(--btn-light-transparent-hover);
+    }
+    .tox .tox-tbtn:focus, .tox .tox-split-button:focus {
+        background: var(--btn-light-transparent-hover);
+        color: var(--ic-brand-font-color-dark);
+        box-shadow: 0 0 0 2px var(--light-4);
+    }
+        .tox .tox-tbtn:focus:not(.tox-tbtn--disabled), .tox .tox-tbtn:focus:not(.tox-tbtn--disabled) svg {
+        color: var(--ic-brand-font-color-dark);
+        fill: var(--ic-brand-font-color-dark);
     }
     .tox .tox-mbtn:hover:not(:disabled):not(.tox-mbtn--active) {
         background: var(--btn-light-transparent-hover);
@@ -666,7 +696,14 @@
     }
     
     /* assignments */
-        #assignment_show .student-assignment-overview {
+    .ic-flash-info, .ic-flash-success, .ic-flash-warning, .ic-flash-error {
+        background-color: var(--dark-4);
+        border-color: var(--ic-brand-primary);
+    }
+    .ic-flash-success .ic-flash__icon {
+        background-color: var(--ic-brand-primary);
+    }
+    #assignment_show .student-assignment-overview {
         border-color: var(--light-4);
     }
     .css-19jkjs4-fileDrop__labelContent {
