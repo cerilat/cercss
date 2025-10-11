@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           LavTint: Canvas
 @namespace      canvas
-@version        1.1.2
+@version        1.1.3
 @author         cerilat
 @homepageURL    https://github.com/cerilat/cercss/blob/main/LavTint/Canvas.css
 @description    Customizable HSL-based theme for Canvas/Instructure
@@ -166,6 +166,27 @@
     }
     #submit_assignment .submission_comment_textarea.focus_or_content::placeholder {
         color: var(--ic-brand-font-color-dark-lightened-15)
+    }
+    .css-1c9fi86-view-tag.css-1c9fi86-view-tag.css-1c9fi86-view-tag.css-1c9fi86-view-tag.css-1c9fi86-view-tag.css-1c9fi86-view-tag.css-1c9fi86-view-tag.css-1c9fi86-view-tag.css-1c9fi86-view-tag.css-1c9fi86-view-tag:focus {
+        outline-offset: calc(0.1875rem);
+        outline-color: var(--light-4);
+    }
+    .css-1c9fi86-view-tag {
+        background-color: var(--btn-light-transparent);
+        border: 0.0625rem solid var(--light-4);
+        color: var(--ic-brand-font-color-dark);
+    }
+    .css-1c9fi86-view-tag:hover {
+        background-color: var(--btn-light-transparent-hover);
+    }
+    .css-1c9fi86-view-tag::before {
+        border-color: var(--light-4);
+}
+    .css-1lx69k1-inlineSVG-svgIcon-tag__icon {
+        color: var(--ic-brand-font-color-dark-lightened-28);
+    }
+    [class$="-tag"]:hover > .css-1lx69k1-inlineSVG-svgIcon-tag__icon {
+        color: var(--ic-brand-font-color-dark);
     }
 
     /* tables */
