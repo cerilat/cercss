@@ -1,9 +1,10 @@
 /* ==UserStyle==
 @name           LavTint: Roblox Creator Dashboard
 @namespace      lavtint-roblox-creator
-@version        1.0.1
+@version        1.0.2
+@author         cerilat
+@homepageURL    https://github.com/cerilat/cercss/blob/main/LavTint/Canvas.css
 @description    Customizable HSL-based theme for Roblox Creator Dashboard
-@author         dynai
 ==/UserStyle== */
 
 @-moz-document domain("create.roblox.com") {
