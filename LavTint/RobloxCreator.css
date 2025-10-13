@@ -1,9 +1,9 @@
 /* ==UserStyle==
 @name           LavTint: Roblox Creator Dashboard
 @namespace      lavtint-roblox-creator
-@version        1.0.2
+@version        1.0.3
 @author         cerilat
-@homepageURL    https://github.com/cerilat/cercss/blob/main/LavTint/Canvas.css
+@homepageURL    https://github.com/cerilat/cercss/blob/main/LavTint/RobloxCreator.css
 @description    Customizable HSL-based theme for Roblox Creator Dashboard
 ==/UserStyle== */
 
@@ -35,6 +35,13 @@
     .web-blox-css-tss-1uwwn81-Grid-root-fullWidthContentV2 {
         background-color: var(--dark-1);
     }
+    
+    path[fill="#00A2FF"], path[fill="rgb(0,162,255)"]{
+        fill: var(--accent-light-2) !important;
+    }
+    div[style="background: rgb(0, 162, 255);"]{
+        background: var(--accent-light-1) !important;
+    }
 
     /* type */
     .web-blox-css-tss-1m2sre3-Typography-h2-Typography-colorPrimary-Typography-root-root {
@@ -53,13 +60,10 @@
     .web-blox-css-mui-g2v1nn-Typography-body1 {
         color: var(--light-2);
     }
-    .web-blox-css-mui-1d0xf5c-Typography-body1 {
+    .web-blox-css-mui-1d0xf5c-Typography-body1, .web-blox-css-mui-xjq734-Typography-body1 {
         color: var(--light-1);
     }
-    .web-blox-css-mui-xjq734-Typography-body1 {
-        color: var(--light-1);
-    }
-    .web-blox-css-mui-1hkjmzd-Typography-body2 {
+    .web-blox-css-mui-1t1s6i5-Typography-body2, .web-blox-css-mui-1uznrro-Typography-body2, .web-blox-css-mui-1hkjmzd-Typography-body2, .web-blox-css-mui-11c4vf5-Typography-body2 {
         color: var(--light-1);
     }
     .web-blox-css-mui-n6uht6-Typography-body2.Mui-selected.Mui-disabled {
@@ -68,12 +72,6 @@
     }
     .web-blox-css-mui-n6uht6-Typography-body2:hover {
         background-color: var(--btn-light-transparent);
-    }
-    .web-blox-css-mui-1t1s6i5-Typography-body2 {
-        color: var(--light-1);
-    }
-    .web-blox-css-mui-1uznrro-Typography-body2 {
-        color: var(--light-1);
     }
     .web-blox-css-mui-vhzchx-Typography-body2 {
         color: var(--light-2);
@@ -90,9 +88,6 @@
     .web-blox-css-tss-w0082-Typography-footer-Typography-colorSecondary-Typography-root {
         color: var(--light-2);
     }
-    .web-blox-css-mui-11c4vf5-Typography-body2 {
-        color: var(--light-1);
-    }
     .web-blox-css-tss-1bn49vz-Typography-body2-Typography-colorDisabled-Typography-root {
         color: var(--light-3);
     }
@@ -100,10 +95,7 @@
         color: var(--light-3);
         background-color: var(--btn-light-transparent);
     }
-    .web-blox-css-tss-hl1oq9-Link-colorPrimary-Link-root {
-        color: var(--accent-light-1);
-    }
-    .web-blox-css-tss-1h34wph-Link-colorPrimary-Link-root-link {
+    .web-blox-css-tss-hl1oq9-Link-colorPrimary-Link-root, .web-blox-css-tss-1h34wph-Link-colorPrimary-Link-root-link {
         color: var(--accent-light-1);
     }
     .web-blox-css-tss-1bvwl34-Link-colorPrimary-Link-root-titleLink {
@@ -113,6 +105,9 @@
         color: var(--light-1);
     }
     .web-blox-css-tss-iis9vc-Link-colorPrimary-Link-root-itemText {
+        color: var(--accent-light-1);
+    }
+    .web-blox-css-tss-xivrpb-Typography-body2-Typography-root-breakdownLink {
         color: var(--accent-light-1);
     }
     .web-blox-css-tss-12qcr6e-Button-text {
@@ -207,6 +202,70 @@
     .web-blox-css-tss-1j6oqpt-Grid-root-contentV2 {
         background-color: var(--dark-1);
     }
+    .web-blox-css-tss-hp0d36-drawerPaperBelowAppBar, .web-blox-css-tss-u0ti89-Grid-root-primaryLeftNav-primaryLeftNavExpanded, .web-blox-css-tss-vpglb-Grid-root-scrollableY {
+        background-color: var(--dark-2);
+        scrollbar-color: var(--light-4) transparent;
+    }
+    .web-blox-css-tss-1rr6m61-ListItemButton-root .MuiListItemText-primary, .web-blox-css-tss-1rr6m61-ListItemButton-root .MuiListItemText-secondary, .web-blox-css-tss-1rr6m61-ListItemButton-root .MuiListItemIcon-root {
+        color: var(--light-2);
+    }
+    .web-blox-css-tss-1rr6m61-ListItemButton-root.Mui-selected, .web-blox-css-tss-1rr6m61-ListItemButton-root.Mui-selected:hover {
+        background-color: var(--btn-light-transparent);
+    }
+    .web-blox-css-tss-1rr6m61-ListItemButton-root:hover {
+        background-color: var(--btn-light-transparent-hover);
+    }
+    .web-blox-css-mui-1untj96 {
+        background-color: var(--dark-3);
+        color: var(--light-1);
+    }
+    .web-blox-css-tss-17k3ift-MenuItem-root-relativeDatePickerMenuItemLayout.Mui-selected {
+        background-color: var(--btn-light-transparent);
+        color: var(--light-1);
+    }
+    .web-blox-css-tss-x2vrx4-MenuItem-root.Mui-selected {
+        color: var(--light-1);
+        background-color: var(--btn-light-transparent);
+    }
+    .web-blox-css-tss-x2vrx4-MenuItem-root:hover {
+        color: var(--light-1);
+        background-color: var(--btn-light-transparent-hover);
+    }
+    .web-blox-css-mui-15wphe8-Typography-body1.Mui-selected:hover {
+        background-color: var(--btn-light-transparent-hover);
+    }
+    .web-blox-css-tss-dkq98-Typography-largeLabel2-Typography-root-name-dropdownOptionColor {
+        color: var(--light-1);
+    }
+    .web-blox-css-tss-elf2dn-Typography-largeLabel2-Typography-root-dropdownOptionColor-name {
+        color: var(--light-1);
+    }
+    
+    /* calendar */
+    .web-blox-css-mui-1x12wr6 {
+        color: var(--light-1);
+        background-color: var(--dark-3);
+    }
+    .web-blox-css-mui-hcpzi6-Typography-caption {
+        color: var(--light-2);
+    }
+    .web-blox-css-mui-s96qfn-Typography-caption {
+        color: var(--light-1);
+        background-color: transparent;
+    }
+    .web-blox-css-mui-s96qfn-Typography-caption:hover, .web-blox-css-mui-s96qfn-Typography-caption:focus {
+        background-color: var(--btn-light-transparent-hover);
+    }
+    .web-blox-css-tss-7k7hsp-DatePicker-paper .MuiPickersDay-root.Mui-selected, .web-blox-css-tss-7k7hsp-DatePicker-paper .MuiPickersDay-root.Mui-selected:hover {
+        color: var(--light-1);
+        background-color: var(--accent-light-2);
+    }
+    .web-blox-css-mui-109xern, .web-blox-css-mui-6xu7fy, .web-blox-css-mui-127ka9j {
+        color: var(--light-1);
+    }
+    .web-blox-css-mui-109xern:hover, .web-blox-css-mui-6xu7fy:hover, .web-blox-css-mui-127ka9j:hover {
+        background-color: var(--btn-light-transparent-hover);
+    }
 
     /* buttons */
     .web-blox-css-tss-v4a5e7-toggleButton-root.Mui-selected {
@@ -276,9 +335,10 @@
     .web-blox-css-mui-1refy80 {
         background-color: var(--accent-light-2);
     }
-    .web-blox-css-tss-vljq93-container-itemCardImg-background {
+    .web-blox-css-tss-vljq93-container-itemCardImg-background, .web-blox-css-tss-17e4e7i-img-thumbnailBackground-completed {
         background-color: var(--dark-4);
     }
+    
 
     /* chips */
     .web-blox-css-tss-1580q5d-Chip-filled {
@@ -465,6 +525,9 @@
     .web-blox-css-mui-1xb8tpm {
         color: var(--light-1);
     }
+    .web-blox-css-tss-1pb3o8o-Card-root-cardContainer {
+        background-color: var(--dark-2);
+    }
     .web-blox-css-tss-1jflqnk-Card-root-card {
         background: var(--dark-2);
     }
@@ -552,5 +615,21 @@
     /* symbols */
     .web-blox-css-mui-zrxehm {
         color: var(--light-1);
+    }
+    .web-blox-css-tss-9s2n0b-Alert-outlinedInfo {
+        border-color: var(--dark-4);
+        color: var(--light-1);
+    }
+    .web-blox-css-mui-1qk2ho8-Typography-body2 .MuiAlert-message {
+        color: var(--light-1);
+    }
+    .web-blox-css-mui-jbwhji, .web-blox-css-mui-jbwhji:hover {
+        color: var(--light-1) !important;
+    }
+    .web-blox-css-mui-c8wh6q:hover {
+        background-color: var(--btn-light-transparent-hover);
+    }
+    .web-blox-css-mui-1qk2ho8-Typography-body2 .MuiAlert-icon {
+        color: var(--accent-light-1);
     }
 }
