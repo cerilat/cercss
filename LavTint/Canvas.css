@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           LavTint: Canvas
 @namespace      canvas
-@version        1.1.3
+@version        1.2.0
 @author         cerilat
 @homepageURL    https://github.com/cerilat/cercss/blob/main/LavTint/Canvas.css
 @description    Customizable HSL-based theme for Canvas/Instructure
@@ -29,14 +29,14 @@
         --btn-dark-transparent-hover: hsla(240,25%,5%,.15);
 
         --ic-brand-primary: var(--accent-light-2);
-        --ic-brand-primary-darkened-5: #144432;
-        --ic-brand-primary-darkened-10: #13402F;
-        --ic-brand-primary-darkened-15: #123D2D;
-        --ic-brand-primary-lightened-5: #20503E;
-        --ic-brand-primary-lightened-10: #2C5948;
-        --ic-brand-primary-lightened-15: #386252;
-        --ic-brand-button--primary-bgd-darkened-5: #144432;
-        --ic-brand-button--primary-bgd-darkened-15: #123D2D;
+        --ic-brand-primary-darkened-5: var(--accent-light-1);
+        --ic-brand-primary-darkened-10: var(--accent-light-1);
+        --ic-brand-primary-darkened-15: var(--accent-light-1);
+        --ic-brand-primary-lightened-5: rgb(32, 80, 62);
+        --ic-brand-primary-lightened-10: rgb(44, 89, 72);
+        --ic-brand-primary-lightened-15: rgb(56, 98, 82);
+        --ic-brand-button--primary-bgd-darkened-5: var(--accent-light-3);
+        --ic-brand-button--primary-bgd-darkened-15: var(--accent-light-3);
         --ic-brand-button--secondary-bgd-darkened-5: #26333D;
         --ic-brand-button--secondary-bgd-darkened-15: #222E37;
         --ic-brand-font-color-dark-lightened-15: var(--light-4);
@@ -149,8 +149,24 @@
         background: var(--btn-light-transparent-hover);
         color: var(--ic-brand-font-color-dark);
     }
+    .btn:hover.ui-state-hover, .Button:hover.ui-state-hover, .ui-button:hover.ui-state-hover {
+        background: var(--btn-light-transparent-hover);
+        color: var(--ic-brand-font-color-dark);
+        border: none;
+    }
+    .btn-primary{
+        background: var(--ic-brand-primary);
+        color: var(--light-1);
+    }
+    .btn-primary:hover, .Button--primary:hover {
+        background: var(--ic-brand-button--primary-bgd-darkened-5) !important;
+        color: var(--ic-brand-button--primary-text) !important;
+    }
     .btn:focus, .Button:focus, .ui-button:focus {
         color: var(--ic-brand-font-color-dark);
+    }
+    .btn:focus, .Button:focus, .ui-button:focus {
+        box-shadow: inset 0 0 0 2px var(--light-4);
     }
     .css-1r098rf-view--inlineBlock-baseButton.css-1r098rf-view--inlineBlock-baseButton.css-1r098rf-view--inlineBlock-baseButton.css-1r098rf-view--inlineBlock-baseButton.css-1r098rf-view--inlineBlock-baseButton.css-1r098rf-view--inlineBlock-baseButton.css-1r098rf-view--inlineBlock-baseButton.css-1r098rf-view--inlineBlock-baseButton.css-1r098rf-view--inlineBlock-baseButton.css-1r098rf-view--inlineBlock-baseButton:focus {
         outline-color: var(--light-4);
@@ -160,6 +176,12 @@
     textarea, input[type=text], input[type=password], input[type=datetime], input[type=datetime-local], input[type=date], input[type=month], input[type=time], input[type=week], input[type=number], input[type=email], input[type=url], input[type=search], input[type=tel], input[type=color], .uneditable-input {
         background-color: var(--dark-4);
         border-color: var(--light-4);
+    }
+    input[type=radio], input[type=checkbox] {
+        accent-color: var(--accent-light-2);
+    }
+    input[type=radio], input[type=checkbox]:hover {
+        accent-color: var(--accent-light-2);
     }
     #submit_assignment .submission_comment_textarea::placeholder {
         color: var(--ic-brand-font-color-dark-lightened-28)
@@ -173,7 +195,7 @@
     }
     .css-1c9fi86-view-tag {
         background-color: var(--btn-light-transparent);
-        border: 0.0625rem solid var(--light-4);
+        border-color: var(--light-4);
         color: var(--ic-brand-font-color-dark);
     }
     .css-1c9fi86-view-tag:hover {
@@ -191,13 +213,13 @@
 
     /* tables */
     .ic-Table th {
-        border-bottom-color: var(--light-3);
+        border-color: var(--light-3);
     }
     .ic-Table tbody th {
-        border-bottom-color: var(--light-4);
+        border-color: var(--light-4);
     }
     .ic-Table td {
-        border-bottom-color: var(--light-4);
+        border-color: var(--light-4);
     }
     .course-list-table .course-list-sort-icon {
         color: var(--ic-brand-font-color-dark-lightened-15);
@@ -225,6 +247,13 @@
         color: var(--ic-brand-font-color-dark);
         font-weight: 600;
     }
+    div[style^="border-bottom: 1px solid #888;"]{
+        border-color: var(--light-4) !important;
+    }
+    table.summary td, table.summary tbody th, table.summary thead th, table.summary caption {
+        border-color: var(--light-4);
+        background: none;
+    }
     
     /* popups */
     .css-zfj2ro-mask {
@@ -235,10 +264,35 @@
         background: var(--dark-4);
         color: var(--ic-brand-font-color-dark);
     }
+    .ui-widget-overlay {
+        background: var(--btn-dark-transparent-hover);
+    }
+    .ui-widget-content {
+        border-color: var(--light-4);
+        background: var(--dark-3);
+    }
+    .ui-dialog .ui-dialog-titlebar.ui-widget-header, .ui-dialog .ui-datepicker .ui-widget-header.ui-datepicker-header, .ui-datepicker .ui-dialog .ui-widget-header.ui-datepicker-header, .ui-datepicker .ui-datepicker-time, .ui-dialog .ui-dialog-buttonpane {
+        background: var(--dark-4);
+        border-color: var(--light-4);
+    }
+    .icon-select-photo:before {
+        color: var(--light-4);
+    }
+    .select-photo-link{
+        text-decoration: none !important;
+    }
+    .avatar-preview .CanvasCropper .Cropper-box {
+        box-shadow: 0px 0px 0px 270px var(--btn-dark-transparent-hover);
+        border-color: var(--light-4);
+    }
+    .resize-handle {
+        background-color: var(--btn-light-transparent);
+        border-color: var(--light-4);
+    }
 
     /* other basic elements */
     hr {
-        border-top: 1px solid var(--light-4);
+        border-color: var(--light-4);
     }
     .menu-item__text {
         color: var(--light-1);
@@ -247,10 +301,10 @@
         background-color: var(--dark-4);
     }
     .menu-item__text::after {
-        border-right-color: var(--dark-4);
+        border-color: var(--dark-4);
     }
     .css-1fgv84d-textInput__facade {
-        border: 0.0625rem solid var(--light-4);
+        border-color: var(--light-4);
         background: var(--btn-light-transparent);
         color: var(--ic-brand-font-color-dark);
     }
@@ -261,9 +315,13 @@
     .css-1ylbheh-textInput:-webkit-any(input)[type]::placeholder {
         color: var(--ic-brand-font-color-dark-lightened-28);
     }
+    .alert {
+        background-color: var(--accent-dark-2);
+        color: var(--accent-light-1);
+    }
     /* menu options */
     .css-1o33kts-view--block-contextView__content {
-        color: rgb(39, 53, 64);
+        color: var(--ic-brand-font-color-dark);
         background: var(--dark-4);
         border-color: transparent;
     }
@@ -375,7 +433,7 @@
     }
     .tox .tox-menubar+.tox-toolbar, .tox .tox-menubar+.tox-toolbar-overlord .tox-toolbar__primary {
         background: none;
-        border-top: 1px solid var(--light-4);
+        border-color: var(--light-4);
     }
     .tox .tox-menubar, .tox .tox-toolbar-overlord, .tox .tox-split-button .tox-tbtn.tox-split-button__chevron {
         background: none;
@@ -398,11 +456,7 @@
         color: var(--ic-brand-font-color-dark);
         fill: var(--ic-brand-font-color-dark);
     }
-    .tox .tox-mbtn:hover:not(:disabled):not(.tox-mbtn--active) {
-        background: var(--btn-light-transparent-hover);
-        color: var(--ic-brand-font-color-dark);
-    }
-    .tox .tox-mbtn:hover:not(:disabled), .tox .tox-mbtn--active {
+    .tox .tox-mbtn:hover:not(:disabled), .tox .tox-mbtn--active, .tox .tox-mbtn:hover:not(:disabled):not(.tox-mbtn--active) {
         background: var(--btn-light-transparent-hover);
         color: var(--ic-brand-font-color-dark);
     }
@@ -415,7 +469,7 @@
     }
     .tox .tox-edit-area__iframe {
         background-color: transparent;
-        border: 0.0625rem solid transparent;
+        border-color: transparent;
     }
     .css-y9piph-view--inlineBlock-baseButton {
         color: var(--ic-brand-font-color-dark);
@@ -437,11 +491,11 @@
         border-color: var(--light-4);
     }
     .ef-file-preview-button {
-        color: var(--ic-brand-font-color) !important;
+        color: var(--ic-brand-font-color-dark) !important;
     }
     .ef-file-preview-button.ef-file-preview-button--active {
         border-color: var(--light-4);
-        color: var(--ic-brand-font-color) !important;
+        color: var(--ic-brand-font-color-dark) !important;
     }
     .ef-file-preview-information-container {
         background: var(--dark-2);
@@ -480,13 +534,54 @@
         .css-2ysm9b-view-link:-webkit-any(a):focus, .css-2ysm9b-view-link:-webkit-any(button):focus {
         color: var(--ic-link-color-darkened-10);
     }
+    .css-nkcj25-baseButton__content {
+        color: var(--ic-brand-font-color-dark);
+        background: var(--btn-light-transparent);
+        border: none;
+        box-shadow: none;
+    }
+    .css-17sfd94-view--inlineBlock-baseButton:hover > [class$="-baseButton__content"] {
+        background: var(--btn-light-transparent-hover);
+    }
+    /* accessibility toggle buttons */
+    .css-14slznx-toggleFacade__facade, .css-1p34dbm-toggleFacade__facade, .css-nsg368-toggleFacade__facade, .css-qpn3b8-toggleFacade__facade {
+        background: none;
+        border-color: var(--light-4);
+        box-shadow: var(--light-4) 0px 0px 0px 0.0625rem inset;
+    }
+    .css-hy0jss-toggleFacade__iconToggle::before, .css-imddxy-toggleFacade__iconToggle::before {
+        background: var(--light-1);
+        box-shadow: none;
+        border-color: var(--light-4);
+    }
+    .css-160ij9p-toggleFacade__label {
+        color: var(--ic-brand-font-color-dark);
+    }
+    .css-1o6oyiu-inlineSVG-svgIcon-toggleFacade__iconSVG {
+        color: var(--dark-2);
+    }
+    .css-5cfb2g-toggleFacade__facade, .css-1k0ln62-toggleFacade__facade {
+        background: var(--ic-brand-primary);
+        border-color: var(--light-4);
+    }
+    .css-5cfb2g-toggleFacade__facade::before, .css-1p34dbm-toggleFacade__facade::before, .css-1k0ln62-toggleFacade__facade::before, .css-qpn3b8-toggleFacade__facade::before {
+        border-color: var(--light-4);
+    }
+    .css-1k4y3jm-toggleFacade__iconToggle::before {
+        background: var(--light-1);
+        box-shadow: none;
+        border: none;
+    }
+    .css-wgt4pe-inlineSVG-svgIcon-toggleFacade__iconSVG, .css-esdgjj-inlineSVG-svgIcon-toggleFacade__iconSVG {
+        color: var(--ic-brand-primary);
+    }
 
     /* topbar-nav */
     #breadcrumbs {
         background-color: transparent;
     }
     .ic-app-nav-toggle-and-crumbs {
-        border-bottom: 1px solid var(--light-4);
+        border-color: var(--light-4);
     }
     .css-1ta5ds2-baseButton__content {
         color: var(--ic-brand-font-color-dark);
@@ -499,12 +594,12 @@
 
     /* footer */
     .ic-app-footer {
-        border-top: 1px solid var(--light-4);
+        border-color: var(--light-4);
     }
 
     /* left sidebar */
     .list-view a.active {
-        border-left: 2px solid var(--light-1);
+        border-color: var(--light-1);
         color: var(--light-1);
     }
     .list-view>ul>li>a:hover, .list-view>nav>ul>li>a:hover, .list-view>div>nav>ul>li>a:hover {
@@ -526,6 +621,12 @@
     .css-duxtdk-inlineSVG-svgIcon:hover, .css-434sft-text:hover, .css-17iswrk-inlineSVG-svgIcon:hover, .css-1h8y4fd-view--block-link:-webkit-any(a):hover, .css-1h8y4fd-view--block-link:-webkit-any(button):hover {
         color: var(--ic-brand-global-nav-menu-item__text-color--active);
     }
+    .css-1h8y4fd-view--block-link:-webkit-any(a):focus, .css-1h8y4fd-view--block-link:-webkit-any(button):focus {
+        color: var(--ic-brand-global-nav-menu-item__text-color--active);
+    }
+    .css-1h8y4fd-view--block-link.css-1h8y4fd-view--block-link.css-1h8y4fd-view--block-link.css-1h8y4fd-view--block-link.css-1h8y4fd-view--block-link.css-1h8y4fd-view--block-link.css-1h8y4fd-view--block-link.css-1h8y4fd-view--block-link.css-1h8y4fd-view--block-link.css-1h8y4fd-view--block-link:focus {
+        outline-color: var(--light-4);
+    }
     .css-1h2tpxc-toggleDetails__toggle {
         color: var(--ic-brand-global-nav-ic-icon-svg-fill);
     }
@@ -536,11 +637,8 @@
     .css-1h2tpxc-toggleDetails__toggle::before {
         border: 0.125rem solid var(--light-4)
     }
-    .css-1bbqffl-view--block-link.css-1bbqffl-view--block-link.css-1bbqffl-view--block-link.css-1bbqffl-view--block-link.css-1bbqffl-view--block-link.css-1bbqffl-view--block-link.css-1bbqffl-view--block-link.css-1bbqffl-view--block-link.css-1bbqffl-view--block-link.css-1bbqffl-view--block-link {
-        margin: 0px 0px 0px 0.375rem;
-        transition: outline-color 0.2s, outline-offset 0.25s;
-        outline-offset: -0.8rem;
-        outline: rgba(21, 71, 52, 0) solid 0.125rem;
+    .css-r2wx27-toggleDetails__details {
+        color: var(--ic-brand-font-color-dark);
     }
     .css-1bbqffl-view--block-link:-webkit-any(a), .css-1bbqffl-view--block-link:-webkit-any(button) {
         color: var(--ic-brand-global-nav-ic-icon-svg-fill);
@@ -554,10 +652,22 @@
     .css-py5qs-text {
         color: var(--ic-brand-font-color-dark-lightened-28);
     }
+    .css-uwp64k-view--inlineBlock-link:-webkit-any(a), .css-uwp64k-view--inlineBlock-link:-webkit-any(button) {
+        color: var(--ic-link-color);
+    }
+    .css-uwp64k-view--inlineBlock-link:-webkit-any(a):hover, .css-uwp64k-view--inlineBlock-link:-webkit-any(button):hover, .css-uwp64k-view--inlineBlock-link:-webkit-any(a):active, .css-uwp64k-view--inlineBlock-link:-webkit-any(button):active {
+        color: var(--ic-link-color-darkened-10);
+    }
+    .css-uwp64k-view--inlineBlock-link.css-uwp64k-view--inlineBlock-link.css-uwp64k-view--inlineBlock-link.css-uwp64k-view--inlineBlock-link.css-uwp64k-view--inlineBlock-link.css-uwp64k-view--inlineBlock-link.css-uwp64k-view--inlineBlock-link.css-uwp64k-view--inlineBlock-link.css-uwp64k-view--inlineBlock-link.css-uwp64k-view--inlineBlock-link:focus {
+        outline-color: var(--ic-link-color-darkened-10);
+    }
+    .css-uwp64k-view--inlineBlock-link:-webkit-any(a):focus, .css-uwp64k-view--inlineBlock-link:-webkit-any(button):focus {
+        color: var(--ic-link-color-darkened-10);
+    }
 
     /* right-sidebar */
     #right-side h2, #right-side .h2 {
-        border-bottom: 1px solid var(--light-4);
+        border-color: var(--light-4);
     }
     #right-side hr {
         border-color: var(--light-4);
@@ -580,7 +690,7 @@
 
     /* dashboard */
     .ic-Dashboard-header__layout {
-        border-bottom: 1px solid var(--light-4);
+        border-color: var(--light-4);
         background: none;
     }
     .ic-DashboardCard {
@@ -603,7 +713,7 @@
     }
     .module-sequence-footer .module-sequence-footer-content {
         background: transparent;
-        border-top: 1px solid var(--light-4);
+        border-color: var(--light-4);
     }
 
     /* announcements */
@@ -638,7 +748,7 @@
     }
     .item-group-condensed .ig-row {
         background: transparent;
-        border-bottom: 1px solid var(--light-4);
+        border-color: var(--light-4);
     }
     .ig-list .ig-row {
         border: 1px solid var(--light-4);
@@ -713,7 +823,7 @@
         outline-color: var(--ic-link-color-darkened-10);
     }
     .css-ki6rdt-view-listItem:not(:first-of-type) {
-        border-top: 0.0625rem solid var(--light-4);
+        border-color: var(--light-4);
     }
     
     /* assignments */
@@ -740,6 +850,47 @@
     .css-c7i7w4-text {
         color: var(--ic-brand-font-color-dark-lightened-28);
     }
+    /* quizzes */
+    #quiz_show ul#quiz_student_details {
+        border-color: var(--light-4);
+    }
+    .quiz-submission, .question_editing {
+        background: none;
+        border-color: var(--light-4);
+    }
+    .quiz_score .score_value {
+        color: var(--ic-brand-font-color-dark-lightened-28);
+    }
+    .quiz-header {
+        border-color: var(--light-4);
+        overflow: hidden;
+    }
+    #questions.assessing {
+        background: none;
+    }
+    .question {
+        border-color: var(--light-4);
+        background-color: var(--dark-1);
+    }
+    .question .header {
+        border-color: var(--light-4);
+        background-color: var(--dark-4);
+    }
+    .question .header .question_points_holder {
+        color: var(--ic-brand-font-color-dark-lightened-28);
+    }
+    .question.multiple_choice_question .answer, .question.multiple_answers_question .answer, .question.matching_question .answer, .question.true_false_question .answer {
+        border-color: var(--light-4);
+    }
+    .form-actions {
+        border-color: var(--light-4);
+    }
+    #last_saved_indicator {
+        color: var(--ic-brand-font-color-dark-lightened-15);
+    }
+    ul#question_list li i {
+        color: var(--ic-brand-font-color-dark-lightened-28);
+    }
 
     /* people */
     .al-options {
@@ -753,7 +904,7 @@
         border-color: transparent;
     }
     .ui-tabs .ui-tabs-nav {
-        border-bottom-color: var(--light-4);
+        border-color: var(--light-4);
     }
     .ui-tabs .ui-tabs-nav li.ui-state-focus, .ui-tabs .ui-tabs-nav li.ui-state-focus.ui-tabs-active {
         border-color: var(--light-4);
@@ -775,7 +926,7 @@
         border-color: var(--light-4);
     }
     select {
-        border: 1px solid var(--light-4);
+        border-color: var(--light-4);
         background-color: var(--dark-2);
     }
     select:focus, input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
@@ -791,7 +942,7 @@
 
     /* profile */
     .avatar {
-        border: 2px solid var(--light-4);
+        border-color: var(--light-4);
         background-color: var(--dark-4);
     }
     
@@ -815,7 +966,7 @@
         color: var(--ic-brand-font-color-dark);
     }
     .css-ml0esy-textInput__facade {
-        border: 0.0625rem solid var(--light-4);
+        border-color: var(--light-4);
         background: var(--dark-4);
         color: var(--ic-brand-font-color-dark);
     }
@@ -840,7 +991,7 @@
         background: var(--dark-4);
     }
     .css-ml0esy-textInput__facade::before {
-        border: 0.125rem solid var(--light-4);
+        border-color: var(--light-4);
     }
     .css-t3k3bl-baseButton__content {
         color: var(--ic-brand-font-color-dark);
@@ -893,6 +1044,61 @@
         background: var(--dark-4);
     }
     
+/* settings */
+    .profile_pic_link .icon-edit {
+        background: var(--dark-4);
+        bottom: 0;
+        color: var(--light-1);
+    }
+    .standalone-icon:before {
+        color: var(--ic-brand-font-color-dark-lightened-28);
+    }
+    a.delete_key_link {
+        color: var(--ic-brand-font-color-dark-lightened-28);
+    }
+    .css-1pes8bg-baseButton__content {
+        color: var(--ic-brand-font-color-dark);
+        background: var(--btn-light-transparent);
+        border: none;
+    }
+    .css-8bdsd5-view--inlineBlock-baseButton:hover > [class$="-baseButton__content"] {
+        background: var(--btn-light-transparent-hover);
+    }
+    .css-3leitx-toggleDetails__toggle {
+        color: inherit;
+    }
+    .css-3leitx-toggleDetails__toggle:focus, .css-3leitx-toggleDetails__toggle:hover, .css-3leitx-toggleDetails__toggle:active {
+        color: var(--ic-brand-font-color-dark-lightened-28);
+    }
+    .css-3leitx-toggleDetails__toggle::before {
+        border-color: var(--light-4);
+    }
+    .css-vr59zz-view--inlineBlock-baseButton:hover > [class$="-baseButton__content"] {
+        background: var(--btn-light-transparent);
+    }
+    .css-ah46rh-toggleDetails__details {
+        color: var(--ic-brand-font-color-dark-lightened-28);
+    }
+    .css-1d3hh31-baseButton__content {
+        color: var(--ic-brand-primary);
+        border-color: var(--light-4);
+    }
+    .css-vr59zz-view--inlineBlock-baseButton.css-vr59zz-view--inlineBlock-baseButton.css-vr59zz-view--inlineBlock-baseButton.css-vr59zz-view--inlineBlock-baseButton.css-vr59zz-view--inlineBlock-baseButton.css-vr59zz-view--inlineBlock-baseButton.css-vr59zz-view--inlineBlock-baseButton.css-vr59zz-view--inlineBlock-baseButton.css-vr59zz-view--inlineBlock-baseButton.css-vr59zz-view--inlineBlock-baseButton:focus {
+        outline-color: var(--light-4);
+    }
+    .css-vr59zz-view--inlineBlock-baseButton, .css-1w68viq-view--inlineBlock-baseButton {
+        color: var(--ic-brand-font-color-dark);
+    }
+    .css-w1voav-baseButton__content {
+        color: var(--light-3);
+        border-color: var(--light-4);
+    }
+    .css-1w68viq-view--inlineBlock-baseButton:hover > [class$="-baseButton__content"] {
+        background: var(--btn-light-transparent);
+    }
+    .css-1w68viq-view--inlineBlock-baseButton.css-1w68viq-view--inlineBlock-baseButton.css-1w68viq-view--inlineBlock-baseButton.css-1w68viq-view--inlineBlock-baseButton.css-1w68viq-view--inlineBlock-baseButton.css-1w68viq-view--inlineBlock-baseButton.css-1w68viq-view--inlineBlock-baseButton.css-1w68viq-view--inlineBlock-baseButton.css-1w68viq-view--inlineBlock-baseButton.css-1w68viq-view--inlineBlock-baseButton:focus {
+        outline-color: var(--light-4);
+    }
     
     
     /* canvasdocs */
@@ -903,7 +1109,7 @@
     .ViewerControls--current-page {
         background-color: var(--dark-4);
         color: var(--ic-brand-font-color-dark);
-        border: 1px solid var(--light-4)
+        border-color: var(--light-4)
     }
     .AnnotationControlButton {
         background-color: transparent;
@@ -935,7 +1141,7 @@
         background-color: var(--dark-4);
     }
     .Page-container[style="width: 974px; border-top: 1px dashed rgb(168, 168, 168);"]{
-        border-top: 1px solid var(--light-4) !important;
+        border-color: var(--light-4) !important;
     }
 
 
