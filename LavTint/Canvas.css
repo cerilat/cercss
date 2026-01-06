@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           LavTint: Canvas
 @namespace      canvas
-@version        1.2.0
+@version        1.2.1
 @author         cerilat
 @homepageURL    https://github.com/cerilat/cercss/blob/main/LavTint/Canvas.css
 @description    Customizable HSL-based theme for Canvas/Instructure
@@ -177,6 +177,14 @@
         background-color: var(--dark-4);
         border-color: var(--light-4);
     }
+    select.ic-Input, textarea.ic-Input, input[type=text].ic-Input, input[type=password].ic-Input, input[type=datetime].ic-Input, input[type=datetime-local].ic-Input, input[type=date].ic-Input, input[type=month].ic-Input, input[type=time].ic-Input, input[type=week].ic-Input, input[type=number].ic-Input, input[type=email].ic-Input, input[type=url].ic-Input, input[type=search].ic-Input, input[type=tel].ic-Input, input[type=color].ic-Input, .uneditable-input.ic-Input {
+        background-color: var(--dark-4);
+        border-color: var(--light-4);
+    }
+    select.ic-Input:focus, textarea.ic-Input:focus, input[type=text].ic-Input:focus, input[type=password].ic-Input:focus, input[type=datetime].ic-Input:focus, input[type=datetime-local].ic-Input:focus, input[type=date].ic-Input:focus, input[type=month].ic-Input:focus, input[type=time].ic-Input:focus, input[type=week].ic-Input:focus, input[type=number].ic-Input:focus, input[type=email].ic-Input:focus, input[type=url].ic-Input:focus, input[type=search].ic-Input:focus, input[type=tel].ic-Input:focus, input[type=color].ic-Input:focus, .uneditable-input.ic-Input:focus {
+        border-color: var(--ic-brand-primary);
+        outline-color: var(--ic-brand-primary);
+    }
     input[type=radio], input[type=checkbox] {
         accent-color: var(--accent-light-2);
     }
@@ -254,6 +262,9 @@
         border-color: var(--light-4);
         background: none;
     }
+    .ic-Table th.ic-Table--header-row {
+        border-color: var(--light-4);
+    }
     
     /* popups */
     .css-zfj2ro-mask {
@@ -318,6 +329,18 @@
     .alert {
         background-color: var(--accent-dark-2);
         color: var(--accent-light-1);
+    }
+    .answer_arrow.correct {
+        color: var(--light-1);
+        background-color: green;
+    }
+    .answer_arrow.incorrect {
+        color: var(--light-1);
+        background-color: red;
+    }
+    .answer_arrow.info {
+        color: var(--dark-1);
+        background-color: var(--light-2);
     }
     /* menu options */
     .css-1o33kts-view--block-contextView__content {
@@ -599,14 +622,18 @@
 
     /* left sidebar */
     .list-view a.active {
-        border-color: var(--light-1);
-        color: var(--light-1);
+        background-color: var(--btn-light-transparent);
+        border-color: var(--light-2);
+        color: var(--light-2);
+        cursor: default;
     }
     .list-view>ul>li>a:hover, .list-view>nav>ul>li>a:hover, .list-view>div>nav>ul>li>a:hover {
         text-decoration: none;
+        background-color: var(--btn-light-transparent-hover);
     }
     .list-view>ul>li>a:focus, .list-view>nav>ul>li>a:focus, .list-view>div>nav>ul>li>a:focus {
         outline-color: var(--light-4);
+        background-color: var(--btn-light-transparent);
     }
     /* navbar fullscreen */
     .css-npkleq-tray {
@@ -850,7 +877,25 @@
     .css-c7i7w4-text {
         color: var(--ic-brand-font-color-dark-lightened-28);
     }
-    /* quizzes */
+    /* assignments: submissions */
+    .submission-details-header__heading-and-grades {
+        border-color: var(--light-4);
+    }
+    .submission-details-comments .comments {
+        background-color: var(--dark-2);
+    }
+    div[style="background-color: #fff; height: 100%"] {
+        background-color: var(--dark-1) !important;
+    }
+    .submission-details-container {
+        border-color: var(--light-4);
+    }
+    @media only screen and (min-width: 992px) {
+        .submission-details-comments .comments {
+            border-color: var(--dark-4);
+        }
+    }
+    /* assignments: quizzes */
     #quiz_show ul#quiz_student_details {
         border-color: var(--light-4);
     }
@@ -867,6 +912,9 @@
     }
     #questions.assessing {
         background: none;
+    }
+    #questions.assessment_results .question .header {
+        background-color: var(--dark-4);
     }
     .question {
         border-color: var(--light-4);
@@ -1099,6 +1147,31 @@
     .css-1w68viq-view--inlineBlock-baseButton.css-1w68viq-view--inlineBlock-baseButton.css-1w68viq-view--inlineBlock-baseButton.css-1w68viq-view--inlineBlock-baseButton.css-1w68viq-view--inlineBlock-baseButton.css-1w68viq-view--inlineBlock-baseButton.css-1w68viq-view--inlineBlock-baseButton.css-1w68viq-view--inlineBlock-baseButton.css-1w68viq-view--inlineBlock-baseButton.css-1w68viq-view--inlineBlock-baseButton:focus {
         outline-color: var(--light-4);
     }
+    .css-shp4i1-colHeader {
+        background: var(--dark-4);
+    }
+    .css-1u4t421-colHeader__button, .css-u1iyfu-inlineSVG-svgIcon-colHeader__sortedIconColor {
+        color: var(--light-1);
+    }
+    /* settings: modal */
+    .css-1wf5tpt-modal {
+        border-color: var(--light-4);
+        background: var(--dark-2);
+        color: var(--light-2);
+    }
+    .css-px82l4-view--block-modalBody.css-px82l4-view--block-modalBody.css-px82l4-view--block-modalBody.css-px82l4-view--block-modalBody.css-px82l4-view--block-modalBody.css-px82l4-view--block-modalBody.css-px82l4-view--block-modalBody.css-px82l4-view--block-modalBody.css-px82l4-view--block-modalBody.css-px82l4-view--block-modalBody:focus {
+        outline: none;
+    }
+    .css-1q7wie3-modalFooter {
+        background: var(--dark-2);
+        border-top: 0.0625rem solid rgb(215, 218, 222);
+    }
+    .css-1ge78zp-baseButton__content {
+        color: var(--light-2);
+        background: var(--accent-light-2);
+        border: none;
+    }
+    
     
     
     /* canvasdocs */
